@@ -1,0 +1,20 @@
+:root {
+  --color-workspace: #f3f1eb;
+  --color-panel: #f8f6f1;
+  --color-paper: #fcfbf7;
+  --color-ink: #22221f;
+  --color-muted: #686860;
+  --color-line: #d6d3cb;
+  --color-image: #e5e3dc;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --controls-width: 264px;
+  --rail-width: 188px;
+  color: var(--color-ink);
+  background: var(--color-workspace);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
