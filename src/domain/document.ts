@@ -1,4 +1,4 @@
-import type { CompositionInput, ImageAsset } from './composition.ts';
+import type { CompositionInput, ImageAsset, SystemId } from './composition.ts';
 
 export interface Box {
   x: number;
@@ -25,6 +25,17 @@ export interface ImageElement {
   box: Box;
   asset: ImageAsset;
   fit: 'contain' | 'cover';
+  focalX: number;
+  focalY: number;
+}
+
+export interface TextureElement {
+  kind: 'texture';
+  id: string;
+  box: Box;
+  pattern: 'lines' | 'dots';
+  pitch: number;
+  opacity: number;
 }
 
 export interface RuleElement {
@@ -37,16 +48,16 @@ export interface RuleElement {
 }
 
 // The `kind` field lets TypeScript identify which properties an element has.
-export type CompositionElement = TextElement | ImageElement | RuleElement;
+export type CompositionElement = TextElement | ImageElement | RuleElement | TextureElement;
 
 export interface CompositionDocument {
   version: 1;
-  system: 'ORDER';
+  system: SystemId;
   seed: number;
   width: number;
   height: number;
   source: CompositionInput;
   grid: { margin: number; columns: number; gutter: number; columnWidth: number };
-  hierarchy: 'Title first' | 'Image first';
+  hierarchy: string;
   elements: CompositionElement[];
 }

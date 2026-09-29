@@ -63,6 +63,12 @@ export function fitText(
     fontSize = Math.max(1, fontSize - 1);
     lines = wrapText(text, box.width, fontSize, mono);
   }
+  // Many explicit line breaks can require a sub-unit size. Keep the document
+  // geometrically valid rather than letting type escape the export boundary.
+  if (lines.length * fontSize * leading > box.height) {
+    fontSize = Math.max(0.1, box.height / (lines.length * leading));
+    lines = wrapText(text, box.width, fontSize, mono);
+  }
   return {
     kind: 'text', id, box, lines, font, fontSize,
     lineHeight: fontSize * leading,

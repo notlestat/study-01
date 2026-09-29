@@ -53,6 +53,8 @@ export function generateOrder({ input, seed }: OrderRequest): CompositionDocumen
     asset: { ...image },
     // Keep extreme aspect ratios whole; moderate crops fill the grid frame.
     fit: ratioDifference > 1.7 || ratioDifference < 1 / 1.7 ? 'contain' : 'cover',
+    focalX: choose(random, [0.25, 0.5, 0.75]),
+    focalY: choose(random, [0.25, 0.5, 0.75]),
   };
 
   return {
@@ -65,6 +67,7 @@ export function generateOrder({ input, seed }: OrderRequest): CompositionDocumen
       fitText('seed', `ORDER / ${String(seed).padStart(6, '0')}`, { x: width - margin - 210, y: margin, width: 210, height: 24 }, 13, 'mono'),
       fitText('title', input.title.trim() || 'Untitled study', titleBox, preferredTypeSize, 'sans'),
       imageElement,
+      { kind: 'texture', id: 'texture', box: { x: imageBox.x + imageBox.width - 18, y: imageBox.y, width: 18, height: imageBox.height }, pattern: 'lines', pitch: choose(random, [6, 8, 10]), opacity: 0.24 },
       { kind: 'rule', id: 'footer-rule', x1: margin, y1: footerY, x2: width - margin, y2: footerY },
       fitText('metadata', input.metadata.trim(), { x: margin, y: footerY + 20, width: spanWidth(columns - 1), height: 92 }, 14, 'mono'),
     ],

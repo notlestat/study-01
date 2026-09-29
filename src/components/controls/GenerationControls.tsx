@@ -13,9 +13,7 @@ interface GenerationControlsProps {
 
 export function GenerationControls({ seed, system, canGenerate, hasImage, loading, onSeedChange, onGenerate }: GenerationControlsProps) {
   const seedValid = /^\d{1,6}$/.test(seed);
-  const help = system !== 'ORDER'
-    ? `${system} is coming later. Select ORDER to generate.`
-    : loading ? 'Reading your image…'
+  const help = loading ? 'Reading your image…'
     : !hasImage ? 'Add an image or use the sample to generate.'
     : !seedValid ? 'Enter a whole number from 0 to 999999.'
     : 'Same inputs and seed, same composition.';

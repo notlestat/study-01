@@ -1,22 +1,9 @@
-# ORDER engine
+# Composition engine
 
-`generateOrder({ input, seed })` returns a plain `CompositionDocument`. The engine imports only domain types and its own helpers. It does not import React, create SVG elements, read the browser, or mutate its inputs.
+`generateComposition({ system, input, seed })` dispatches to ORDER, SILENCE, or TENSION. Each generator is a deterministic, browser-independent function returning a `CompositionDocument`. The same input and seed produce the same geometry, type, crop, and texture decisions.
 
-## Starting rules
+All systems use a 900×1200 paper. ORDER alternates image/title hierarchy on a four- or six-column grid. SILENCE holds a smaller image and title apart in a wide open field. TENSION opposes a dense image column with a narrow, large title and a strong horizontal division. The rules calculate arrangements rather than selecting complete poster presets. `random.ts` owns seeded choices; `text.ts` estimates wrapping and fitting; `shared.ts` validates and frames the image.
 
-- A 900×1200 paper with an equal outer margin of 60, 72, or 84 units.
-- Four or six columns, with a 24-unit gutter.
-- Shared left alignment for the edition, title, rule, and metadata.
-- Title-first or image-first hierarchy, with a consistent gap between the two.
-- Image edges align to column boundaries. Portrait sources use narrower spans.
-- Moderate aspect-ratio differences use a centered crop; extreme differences preserve the full image.
-- Headline size starts at 88, 100, or 112 units, then reduces if the wrapped text needs more space.
-- Metadata remains below the rule in a fixed bottom region.
+`mutateComposition(current, locks)` generates candidates from successive seeds and merges the locked parts from the current document. GRID holds all geometry and the grid description; TYPE holds the title and metadata; IMAGE holds the image element; TEXTURE holds the texture element. A candidate is accepted only when its title and image boxes do not collide. With all locks enabled, the current document is returned unchanged.
 
-These are provisional design rules to judge against real images. Seeds vary choices inside the rules. The engine calculates geometry rather than selecting complete preset posters.
-
-`random.ts` owns the local pseudorandom sequence. `text.ts` owns wrapping and conservative width estimates. Font measurement is approximate; exact font shaping is not part of this phase.
-
-The renderer reads this description and creates SVG. Grid guides are a UI overlay and do not alter the document. An eventual export renderer can use the same document, but local blob URLs will need asset packaging for portable output.
-
-SILENCE, TENSION, mutation, locks, texture, persistence, and export are not implemented here. Phase 02 generation always creates a fresh ORDER document.
+The engine imports only domain types and its own helpers. Image decoding, storage, SVG drawing, and export belong outside it. This boundary allows tests to run in Node and allows a future renderer or worker to reuse the composition rules.
