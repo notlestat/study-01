@@ -4,10 +4,16 @@ A generative composition instrument for exploring visual systems. Phase 02 adds 
 
 ## Run locally
 
+Node 26.8.1 is the verified development runtime. The test command imports TypeScript directly through Node's native support, so older Node releases may require an upgrade even if they can run Vite. No API key or backend is needed.
+
 ```sh
-npm install
+git clone https://github.com/notlestat/study-01.git
+cd study-01
+npm ci
 npm run dev
 ```
+
+Run these checks from the repository root. Build before previewing:
 
 ```sh
 npm run typecheck
