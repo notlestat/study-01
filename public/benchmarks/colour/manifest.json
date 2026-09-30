@@ -1,0 +1,96 @@
+{
+  "count": 15,
+  "source": "Recoloured geometric test image; palette anchors are listed in the source document",
+  "entries": [
+    {
+      "system": "ORDER",
+      "mode": "MONOCHROME",
+      "filename": "order-monochrome.svg",
+      "hash": "cb8880e46ece8ddb36cb439c3b23eb414f10b34d2cce22978f40e91b25f7d020"
+    },
+    {
+      "system": "ORDER",
+      "mode": "DUOTONE",
+      "filename": "order-duotone.svg",
+      "hash": "8ef10731a8f24a16f05c592931380ade89206f8675c0c4eb30c62e78b2b21332"
+    },
+    {
+      "system": "ORDER",
+      "mode": "TRITONE",
+      "filename": "order-tritone.svg",
+      "hash": "999a774ba0cfdde5cc32539e563a6091a99934766c71ffb1b3c262ab4ff0cf01"
+    },
+    {
+      "system": "ORDER",
+      "mode": "EXTRACTED_PALETTE",
+      "filename": "order-extracted_palette.svg",
+      "hash": "a4227e41d9f8aa8ad119b4998665b6ef7c8b2cfbf164c67111ef4f1e0d9da9e2"
+    },
+    {
+      "system": "ORDER",
+      "mode": "INK_SYSTEM",
+      "filename": "order-ink_system.svg",
+      "hash": "41f90374a0d59961609c933c03aaaeff30a24a538124a547e5292754d2c83445"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "MONOCHROME",
+      "filename": "silence-monochrome.svg",
+      "hash": "e12a2e4ee047e372fae755729f853968b8e7119e28babe2c824fab66a064c923"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "DUOTONE",
+      "filename": "silence-duotone.svg",
+      "hash": "8335a1c857ca43421e3dfa57af910bd50cd1f22f7cbc2630550dea7b24131cfc"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "TRITONE",
+      "filename": "silence-tritone.svg",
+      "hash": "0f522c683888105cc014e25a854ea624325f12f9b9fc1b91758f1140a43473e0"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "EXTRACTED_PALETTE",
+      "filename": "silence-extracted_palette.svg",
+      "hash": "8cb333ce3893a9c3f2e5ed87572d908a9c3c4c3a3ee40443ee708ac66e3d8853"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "INK_SYSTEM",
+      "filename": "silence-ink_system.svg",
+      "hash": "13ef1c9ec868528105cb6e31321818031d784fb3a2c5c2bca12d9c5037e0be86"
+    },
+    {
+      "system": "TENSION",
+      "mode": "MONOCHROME",
+      "filename": "tension-monochrome.svg",
+      "hash": "5a760615b278ba916930da6c980edf4939743b21b31cb3e36bdf566f27207a09"
+    },
+    {
+      "system": "TENSION",
+      "mode": "DUOTONE",
+      "filename": "tension-duotone.svg",
+      "hash": "a855c4d93378bd36e7418894556b3395d6269465b822a5f5006ecc76fc908e69"
+    },
+    {
+      "system": "TENSION",
+      "mode": "TRITONE",
+      "filename": "tension-tritone.svg",
+      "hash": "fcf651dc39027407970ee6706bd5440a01af51fc080b79c977b2053cf5289512"
+    },
+    {
+      "system": "TENSION",
+      "mode": "EXTRACTED_PALETTE",
+      "filename": "tension-extracted_palette.svg",
+      "hash": "cfb73591ddd78795217134940852e5c9f99db26f292d90448082aa7f21c3f1f7"
+    },
+    {
+      "system": "TENSION",
+      "mode": "INK_SYSTEM",
+      "filename": "tension-ink_system.svg",
+      "hash": "7cbe3e3a577d238d48a5e115a45c708890dff919e0a237a3afb6cf0c921e5667"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 import type { CompositionDocument } from '../domain/document';
+import { establishLineage } from '../engine/lineage.ts';
 
 const DATABASE_NAME = 'study-01';
 const STORE_NAME = 'variations';
 const LOCAL_IMAGE = '__saved_local_image__';
+const ORIGINAL_IMAGE = '__saved_original_image__';
 
 export interface SavedVariation {
   id: string;
@@ -12,6 +14,7 @@ export interface SavedVariation {
 
 interface StoredVariation extends SavedVariation {
   imageBlob?: Blob;
+  originalBlob?: Blob;
 }
 
 function openDatabase(): Promise<IDBDatabase> {
@@ -52,10 +55,21 @@ export async function readSavedVariations(): Promise<StoredVariation[]> {
   });
 }
 
-export function hydrateVariation(stored: StoredVariation): { variation: SavedVariation; ownedUrl?: string } {
-  if (!stored.imageBlob) return { variation: stored };
-  const ownedUrl = URL.createObjectURL(stored.imageBlob);
-  return { variation: { id: stored.id, createdAt: stored.createdAt, document: withImageSource(stored.document, ownedUrl) }, ownedUrl };
+export function hydrateVariation(stored: StoredVariation): { variation: SavedVariation; ownedUrls: string[] } {
+  const ownedUrls: string[] = [];
+  let document = stored.document;
+  if (stored.imageBlob) {
+    const url = URL.createObjectURL(stored.imageBlob);
+    ownedUrls.push(url);
+    document = withImageSource(document, url);
+  }
+  if (stored.originalBlob && document.processing?.original.src === ORIGINAL_IMAGE) {
+    const url = URL.createObjectURL(stored.originalBlob);
+    ownedUrls.push(url);
+    document = { ...document, processing: { ...document.processing, original: { ...document.processing.original, src: url } } };
+  }
+  if (!document.lineage) document = establishLineage(document, `legacy-${stored.id}`, stored.createdAt);
+  return { variation: { id: stored.id, createdAt: stored.createdAt, document }, ownedUrls };
 }
 
 export async function saveVariation(document: CompositionDocument): Promise<SavedVariation> {
@@ -64,8 +78,11 @@ export async function saveVariation(document: CompositionDocument): Promise<Save
   const src = document.source.image?.src;
   const isLocal = document.source.image?.origin === 'local';
   const imageBlob = isLocal && src ? await (await fetch(src)).blob() : undefined;
-  const storedDocument = isLocal ? withImageSource(document, LOCAL_IMAGE) : document;
-  const stored: StoredVariation = { id, createdAt, document: storedDocument, imageBlob };
+  const original = document.processing?.original;
+  const originalBlob = original?.origin === 'local' ? await (await fetch(original.src)).blob() : undefined;
+  let storedDocument = isLocal ? withImageSource(document, LOCAL_IMAGE) : document;
+  if (originalBlob && storedDocument.processing) storedDocument = { ...storedDocument, processing: { ...storedDocument.processing, original: { ...storedDocument.processing.original, src: ORIGINAL_IMAGE } } };
+  const stored: StoredVariation = { id, createdAt, document: storedDocument, imageBlob, originalBlob };
   await transact('readwrite', (store, finish) => {
     store.put(stored);
     finish(undefined);

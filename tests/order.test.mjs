@@ -16,14 +16,18 @@ test('seeds produce varied geometry while retaining ORDER alignment', () => {
   const outputs = Array.from({ length: 40 }, (_, seed) => generateOrder({ input, seed }));
   const layouts = new Set(outputs.map(({ grid, elements, hierarchy }) => JSON.stringify({ grid, hierarchy, boxes: elements.map((element) => element.box) })));
   assert.ok(layouts.size > 20);
-  assert.deepEqual(new Set(outputs.map((doc) => doc.hierarchy)), new Set(['Title first', 'Image first']));
+  assert.deepEqual(new Set(outputs.map((doc) => doc.family)), new Set(['Stack', 'Parallel', 'Inset']));
+  assert.ok(outputs.some((doc) => doc.hierarchy === 'Title first'));
+  assert.ok(outputs.some((doc) => doc.hierarchy === 'Image first'));
   for (const doc of outputs) {
     const title = doc.elements.find((el) => el.id === 'title');
     const frame = doc.elements.find((el) => el.kind === 'image');
-    assert.equal(title.box.x, doc.grid.margin);
+    const titleColumn = (title.box.x - doc.grid.margin) / (doc.grid.columnWidth + doc.grid.gutter);
+    assert.ok(Math.abs(titleColumn - Math.round(titleColumn)) < 0.00001);
     const columnIndex = (frame.box.x - doc.grid.margin) / (doc.grid.columnWidth + doc.grid.gutter);
     assert.ok(Math.abs(columnIndex - Math.round(columnIndex)) < 0.00001);
-    assert.ok(title.box.y + title.box.height <= frame.box.y || frame.box.y + frame.box.height <= title.box.y);
+    assert.ok(title.box.y + title.box.height <= frame.box.y || frame.box.y + frame.box.height <= title.box.y
+      || title.box.x + title.box.width <= frame.box.x || frame.box.x + frame.box.width <= title.box.x);
   }
 });
 

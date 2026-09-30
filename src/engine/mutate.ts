@@ -1,8 +1,10 @@
 import type { CompositionLocks } from '../domain/composition.ts';
 import type { Box, CompositionDocument, CompositionElement, TextElement } from '../domain/document.ts';
 import { generateComposition } from './generate.ts';
-import { MAX_SEED } from './random.ts';
+import { assertSeed, MAX_SEED } from './random.ts';
 import { fitText } from './text.ts';
+import { applySpaceZones } from './space.ts';
+import { generateFamily } from './family.ts';
 
 function overlaps(a: Box, b: Box): boolean {
   return a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
@@ -44,13 +46,27 @@ function hasCollision(document: CompositionDocument): boolean {
 }
 
 /** Pure mutation: candidate seeds are searched until the held parts still make a valid composition. */
-export function mutateComposition(current: CompositionDocument, locks: CompositionLocks): CompositionDocument {
+export function mutateComposition(current: CompositionDocument, locks: CompositionLocks, startSeed = (current.seed + 1) % (MAX_SEED + 1)): CompositionDocument {
   if (Object.values(locks).every(Boolean)) return current;
-  for (let offset = 1; offset <= 128; offset++) {
-    const seed = (current.seed + offset) % (MAX_SEED + 1);
-    const candidate = generateComposition({ system: current.system, input: current.source, seed });
+  assertSeed(startSeed);
+  for (let offset = 0; offset < 128; offset++) {
+    const seed = (startSeed + offset) % (MAX_SEED + 1);
+    const generated = generateComposition({ system: current.system, input: current.source, seed });
+    const candidate = current.familyAsset
+      ? generateFamily({ ...generated, processing: current.processing, typography: current.typography }).find((item) => item.familyAsset?.format === current.familyAsset?.format)!
+      : generated;
+    if (current.familyAsset) candidate.familyAsset = { ...current.familyAsset };
+    if (current.drift) candidate.drift = { ...current.drift };
+    if (current.colour) candidate.colour = { ...current.colour };
+    if (locks.GRID && current.family && candidate.family !== current.family) continue;
     const result = merge(current, candidate, locks);
-    if (!hasCollision(result)) return result;
+    // Some family formats intentionally set type over the image. Preserve that
+    // relationship, while still rejecting a collision introduced by locks.
+    if (hasCollision(result) && !(current.familyAsset && hasCollision(candidate))) continue;
+    if (current.spaceZones?.length) {
+      try { return applySpaceZones(result, current.spaceZones, locks); } catch { continue; }
+    }
+    return result;
   }
   throw new Error('No clear arrangement was found. Release a lock and try again.');
 }

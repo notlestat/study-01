@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { CompositionDocument } from '../../domain/document';
 import { CompositionRenderer } from '../canvas/CompositionRenderer';
 import { Icon } from '../ui/Icon';
@@ -14,12 +15,13 @@ interface VariationsRailProps {
 }
 
 export function VariationsRail({ document, variations, storageReady, saving, onSave, onRestore, onRemove }: VariationsRailProps) {
+  const [removing, setRemoving] = useState<string | null>(null);
   const image = document.elements.find((element) => element.kind === 'image');
   return (
     <aside className="variations-rail" aria-label="Variations">
       <div className="panel-heading"><h2>Variations</h2><span className="mono panel-index">{String(variations.length).padStart(2, '0')}</span></div>
       <div className="current-variation">
-        <div className="variation-thumbnail" aria-hidden="true"><div className="composition-paper"><CompositionRenderer document={document} /></div></div>
+        <div className="variation-thumbnail" aria-hidden="true"><div className="composition-paper" style={{ aspectRatio: `${document.width} / ${document.height}` }}><CompositionRenderer document={document} /></div></div>
         <div className="variation-label mono"><span>{document.system} / {String(document.seed).padStart(6, '0')}</span><span>Current</span></div>
       </div>
       <button className="save-variation" type="button" disabled={!storageReady || saving} onClick={onSave}><Icon name="plus" size={14} /> {saving ? 'Saving…' : 'Save variation'}</button>
@@ -28,11 +30,11 @@ export function VariationsRail({ document, variations, storageReady, saving, onS
           {variations.map((variation) => (
             <div className="saved-variation" key={variation.id}>
               <button type="button" className="saved-variation-select" onClick={() => onRestore(variation)} aria-label={`Restore ${variation.document.system} seed ${variation.document.seed}, ${variation.document.source.image?.name ?? 'no image'}`}>
-                <div className="composition-paper" aria-hidden="true"><CompositionRenderer document={variation.document} /></div>
+                <div className="composition-paper" style={{ aspectRatio: `${variation.document.width} / ${variation.document.height}` }} aria-hidden="true"><CompositionRenderer document={variation.document} /></div>
                 <span className="mono">{variation.document.system} / {String(variation.document.seed).padStart(6, '0')}</span>
                 <span className="saved-source-name">{variation.document.source.image?.name}</span>
               </button>
-              <button type="button" className="saved-variation-remove" onClick={() => onRemove(variation.id)} aria-label={`Remove saved ${variation.document.system} seed ${variation.document.seed}`}>×</button>
+              <button type="button" className="saved-variation-remove" onClick={() => setRemoving(variation.id)} aria-label={`Remove saved ${variation.document.system} seed ${variation.document.seed}`}>×</button>{removing === variation.id && <div className="rail-delete-confirm"><span>Delete this saved study?</span><button type="button" onClick={() => { onRemove(variation.id); setRemoving(null); }}>Delete</button><button type="button" onClick={() => setRemoving(null)}>Cancel</button></div>}
             </div>
           ))}
         </div>

@@ -1,0 +1,207 @@
+{
+  "count": 33,
+  "parentSeed": 11,
+  "treatmentSeed": 18,
+  "intensity": 0.7,
+  "readability": 0.35,
+  "entries": [
+    {
+      "system": "ORDER",
+      "kind": "SOURCE",
+      "filename": "order-source.svg",
+      "sha256": "40399e250978e039b13bff8637182855d21daeaa2da9a8f8ae44af4c9b6d37d4"
+    },
+    {
+      "system": "ORDER",
+      "kind": "CHARACTER_DISPLACEMENT",
+      "filename": "order-character_displacement.svg",
+      "sha256": "4940d562c51da8c38bd706a400de2856297266cab6fe06b587506012e219361e"
+    },
+    {
+      "system": "ORDER",
+      "kind": "REPETITION",
+      "filename": "order-repetition.svg",
+      "sha256": "75521fc87dd2d5ad226c8c35a8be9fa29121d82cae087974ca2c27af44176c91"
+    },
+    {
+      "system": "ORDER",
+      "kind": "VERTICAL_COMPRESSION",
+      "filename": "order-vertical_compression.svg",
+      "sha256": "0bcf9fc66ac3a7918c0f4917bad5e7c8ea24f9daf526a5be9c78c8a1b00f877e"
+    },
+    {
+      "system": "ORDER",
+      "kind": "HORIZONTAL_STRETCH",
+      "filename": "order-horizontal_stretch.svg",
+      "sha256": "2a1fa6b4755d9edd47499b5756ebd9c98a5d65d196580770988722cabb999779"
+    },
+    {
+      "system": "ORDER",
+      "kind": "LINE_FRAGMENTATION",
+      "filename": "order-line_fragmentation.svg",
+      "sha256": "5629588620990352ffb4a634872ce58f75aa287b501975c7795212d932ae6b71"
+    },
+    {
+      "system": "ORDER",
+      "kind": "TRACKING_DISTORTION",
+      "filename": "order-tracking_distortion.svg",
+      "sha256": "4477501787425353cfc89b7de2840d47519e6ec7a6676e67ff7a0fee1d6fcde6"
+    },
+    {
+      "system": "ORDER",
+      "kind": "BASELINE_SHIFT",
+      "filename": "order-baseline_shift.svg",
+      "sha256": "a12fed776f05cce896f0ef69fdab5f75db71146dc354402052c1d2e918ffc47d"
+    },
+    {
+      "system": "ORDER",
+      "kind": "GRID_SEPARATION",
+      "filename": "order-grid_separation.svg",
+      "sha256": "20f2614b1df7224ccf13576d1b274dbd8316a8ea0eb45b164a217d9e45f1380d"
+    },
+    {
+      "system": "ORDER",
+      "kind": "TYPOGRAPHIC_MASK",
+      "filename": "order-typographic_mask.svg",
+      "sha256": "545667d1c4676d4c4bd168a2ae9ab4034bbd3bb9986b91a8b68ddc06c4ad6516"
+    },
+    {
+      "system": "ORDER",
+      "kind": "PROCEDURAL_EROSION",
+      "filename": "order-procedural_erosion.svg",
+      "sha256": "09afc9f9662f0226e73468fe7d7aabc3dfea1741a83f9da037b0d3370edae9cb"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "SOURCE",
+      "filename": "silence-source.svg",
+      "sha256": "d98436406724a98e4a78598d5c9b83ed98b85dcf001a9528b137cfccceb362f7"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "CHARACTER_DISPLACEMENT",
+      "filename": "silence-character_displacement.svg",
+      "sha256": "909a57493a13bda2db32c10d5f2c19a35b765cfd06520505d2c4016d9ce9a94b"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "REPETITION",
+      "filename": "silence-repetition.svg",
+      "sha256": "faa09449065aecd9993aa803dbd3dffbf5f44cc2ef438fda9a03f96b14c4f708"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "VERTICAL_COMPRESSION",
+      "filename": "silence-vertical_compression.svg",
+      "sha256": "8e6a0a735bff6487db5c64e19920b1f8428127815de01cb18696fb24df3ba7b5"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "HORIZONTAL_STRETCH",
+      "filename": "silence-horizontal_stretch.svg",
+      "sha256": "764b217a5aec29a1bce1ec7bd34efa23ce0e33c0e05d2a9359906b7e31d53cb2"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "LINE_FRAGMENTATION",
+      "filename": "silence-line_fragmentation.svg",
+      "sha256": "95c12f159218071978e94139b1e9821e16bf15dba9f8c549f07485a08a67e283"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TRACKING_DISTORTION",
+      "filename": "silence-tracking_distortion.svg",
+      "sha256": "93cd96adf4a43458a01bbd0d8df8a157964c46f4dd7a44347d0d7d09fec4109d"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "BASELINE_SHIFT",
+      "filename": "silence-baseline_shift.svg",
+      "sha256": "3732ebb8759a4423e57b676ecdb2806b9fecebf20cefe731f87a52ecef1b54de"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "GRID_SEPARATION",
+      "filename": "silence-grid_separation.svg",
+      "sha256": "ee68a6a7eb18c2af30a2215e1f6c80407388c2a1c248b264452512da0bc56beb"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TYPOGRAPHIC_MASK",
+      "filename": "silence-typographic_mask.svg",
+      "sha256": "3a1aeb15d21d16a8dce290c50af15455085e9ce7ec44b2c147fc504e4518ee94"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "PROCEDURAL_EROSION",
+      "filename": "silence-procedural_erosion.svg",
+      "sha256": "0896c234d18424d6edb5fb97be70abbaceb00761e9069892537a60c1779eb853"
+    },
+    {
+      "system": "TENSION",
+      "kind": "SOURCE",
+      "filename": "tension-source.svg",
+      "sha256": "01751dd21bf03de76e4364aa999a1c703bffcee9bdc0105e889ac7a0e0faba6a"
+    },
+    {
+      "system": "TENSION",
+      "kind": "CHARACTER_DISPLACEMENT",
+      "filename": "tension-character_displacement.svg",
+      "sha256": "7283cbd41e46de0a2710846315fc937829380aeed03f378c519d7c39340526cc"
+    },
+    {
+      "system": "TENSION",
+      "kind": "REPETITION",
+      "filename": "tension-repetition.svg",
+      "sha256": "77793be89cd70d716574f935f751a649a8d37bd2cb7279fae45d7d3ba52ff5d4"
+    },
+    {
+      "system": "TENSION",
+      "kind": "VERTICAL_COMPRESSION",
+      "filename": "tension-vertical_compression.svg",
+      "sha256": "4e764bc95a68163ef7d2085de1a322e49c55501c0a3fc32718d29446f7e3c47d"
+    },
+    {
+      "system": "TENSION",
+      "kind": "HORIZONTAL_STRETCH",
+      "filename": "tension-horizontal_stretch.svg",
+      "sha256": "f955bf8a151601b902bb6fea55a677607e570f0bd18f0d47ff1acd18d34a3c6a"
+    },
+    {
+      "system": "TENSION",
+      "kind": "LINE_FRAGMENTATION",
+      "filename": "tension-line_fragmentation.svg",
+      "sha256": "0ab1c1a262b859197775c05175969de891ad531278db92ab7c093603767636a3"
+    },
+    {
+      "system": "TENSION",
+      "kind": "TRACKING_DISTORTION",
+      "filename": "tension-tracking_distortion.svg",
+      "sha256": "617537370fdaee54397e25a009d21599f3731c9b2f1e66e6e86842ddadb3cde2"
+    },
+    {
+      "system": "TENSION",
+      "kind": "BASELINE_SHIFT",
+      "filename": "tension-baseline_shift.svg",
+      "sha256": "b4ac37dd139ff6a9007f8f8ef4a4e806f4dcbbdfc22bc429e0d83021ea164b4d"
+    },
+    {
+      "system": "TENSION",
+      "kind": "GRID_SEPARATION",
+      "filename": "tension-grid_separation.svg",
+      "sha256": "88f2e467557bd6c4e7c785e966dfe3a755b655ae2f41550071de167a1b530f30"
+    },
+    {
+      "system": "TENSION",
+      "kind": "TYPOGRAPHIC_MASK",
+      "filename": "tension-typographic_mask.svg",
+      "sha256": "1629727b5ff18d140f0a8fb59b6b0f328d2acc6b6f9ef08bbc1032febbc4fa01"
+    },
+    {
+      "system": "TENSION",
+      "kind": "PROCEDURAL_EROSION",
+      "filename": "tension-procedural_erosion.svg",
+      "sha256": "abb0cf767eafea88944a236af3e8d97971cb255f850b4751865a95a7f0d0467d"
+    }
+  ]
+}

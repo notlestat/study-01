@@ -1,0 +1,112 @@
+{
+  "count": 15,
+  "parentSeed": 11,
+  "operationSeed": 18,
+  "entries": [
+    {
+      "system": "ORDER",
+      "severity": "SOURCE",
+      "intensity": 0,
+      "filename": "order-source.svg",
+      "sha256": "40399e250978e039b13bff8637182855d21daeaa2da9a8f8ae44af4c9b6d37d4"
+    },
+    {
+      "system": "ORDER",
+      "severity": "LOW",
+      "intensity": 0.25,
+      "filename": "order-low.svg",
+      "sha256": "f424c7cbc3da89a42f020155a7cd2d529653266815d32a9c883149e2b3b5b375"
+    },
+    {
+      "system": "ORDER",
+      "severity": "MEDIUM",
+      "intensity": 0.5,
+      "filename": "order-medium.svg",
+      "sha256": "eab6e5a9608895f06936d700307d98dd2144e0ab53ae79f8349d3858a3f8366a"
+    },
+    {
+      "system": "ORDER",
+      "severity": "HIGH",
+      "intensity": 0.75,
+      "filename": "order-high.svg",
+      "sha256": "7a3625cfe6a1167e9b9f26613631dd6c8dc7e8fb6d4f266110de4b0236fd0190"
+    },
+    {
+      "system": "ORDER",
+      "severity": "EXTREME",
+      "intensity": 1,
+      "filename": "order-extreme.svg",
+      "sha256": "11a4474d7b2d758a61a21c495b3f82d981d380f0c9eb093bf3ed3026405d5c11"
+    },
+    {
+      "system": "SILENCE",
+      "severity": "SOURCE",
+      "intensity": 0,
+      "filename": "silence-source.svg",
+      "sha256": "d98436406724a98e4a78598d5c9b83ed98b85dcf001a9528b137cfccceb362f7"
+    },
+    {
+      "system": "SILENCE",
+      "severity": "LOW",
+      "intensity": 0.25,
+      "filename": "silence-low.svg",
+      "sha256": "c36860c9ab60c0cde2b44ddc277fd0233257106a19b75d7db321a4e1432ad188"
+    },
+    {
+      "system": "SILENCE",
+      "severity": "MEDIUM",
+      "intensity": 0.5,
+      "filename": "silence-medium.svg",
+      "sha256": "9acd16c7cf5fb4c78dc34fe5cda4e69ab96cd4125754398e9abd73421055a10d"
+    },
+    {
+      "system": "SILENCE",
+      "severity": "HIGH",
+      "intensity": 0.75,
+      "filename": "silence-high.svg",
+      "sha256": "758bfdba99fb0488426f039b112cc5b0456a1fa8821bc5b8042a9b15c7f12aa2"
+    },
+    {
+      "system": "SILENCE",
+      "severity": "EXTREME",
+      "intensity": 1,
+      "filename": "silence-extreme.svg",
+      "sha256": "b36d5932feb79af973ba94143e34fa7dc6ccacbe102133bf5f69cee108733aad"
+    },
+    {
+      "system": "TENSION",
+      "severity": "SOURCE",
+      "intensity": 0,
+      "filename": "tension-source.svg",
+      "sha256": "01751dd21bf03de76e4364aa999a1c703bffcee9bdc0105e889ac7a0e0faba6a"
+    },
+    {
+      "system": "TENSION",
+      "severity": "LOW",
+      "intensity": 0.25,
+      "filename": "tension-low.svg",
+      "sha256": "84d0fd9321f3cba0d25b9f7bd908ab5bb804a47e2dd993d65b3f55654d0fd436"
+    },
+    {
+      "system": "TENSION",
+      "severity": "MEDIUM",
+      "intensity": 0.5,
+      "filename": "tension-medium.svg",
+      "sha256": "aaf339e4921bb5faf2b564b6d6648e614769f5d43979e225b1be48a82493cb49"
+    },
+    {
+      "system": "TENSION",
+      "severity": "HIGH",
+      "intensity": 0.75,
+      "filename": "tension-high.svg",
+      "sha256": "1acb891d6bb0b076224cf06c6f0d33b7c25eb8a995d7d0a71de3d0f0eea38c2e"
+    },
+    {
+      "system": "TENSION",
+      "severity": "EXTREME",
+      "intensity": 1,
+      "filename": "tension-extreme.svg",
+      "sha256": "1f39b0bbfd684fc76ba4ea1cb65efe8a1483abb416a85624d9390da6296f1b8f"
+    }
+  ]
+}

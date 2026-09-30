@@ -1,0 +1,175 @@
+{
+  "count": 21,
+  "parentSeed": 11,
+  "source": "Built-in geometric sample",
+  "entries": [
+    {
+      "system": "ORDER",
+      "format": "POSTER",
+      "filename": "order-poster.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "3bdda2b608e87da29d637ebdc6bcaaf91ff934c5202da55d2bf3959038e2701a"
+    },
+    {
+      "system": "ORDER",
+      "format": "SQUARE",
+      "filename": "order-square.svg",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "45f934c98db4c6a7f1403a426b8e386a2b613baa5c285d5d2d53d9fbde5f7d9d"
+    },
+    {
+      "system": "ORDER",
+      "format": "EDITORIAL",
+      "filename": "order-editorial.svg",
+      "width": 1200,
+      "height": 1600,
+      "sha256": "a01a347fc99210be81ed532e39eed71652fe683dee372ca8259a1ca061891f46"
+    },
+    {
+      "system": "ORDER",
+      "format": "BANNER",
+      "filename": "order-banner.svg",
+      "width": 1600,
+      "height": 600,
+      "sha256": "a2a16501998be218ae6e0e279387b74cef75b1fd7ab69d5a151e8e897bd47dcc"
+    },
+    {
+      "system": "ORDER",
+      "format": "SOCIAL_PORTRAIT",
+      "filename": "order-social_portrait.svg",
+      "width": 1080,
+      "height": 1350,
+      "sha256": "36f8314d7ae0a5871e6c6d96ba8268637d41bd81b4487c97959909b571fef5cf"
+    },
+    {
+      "system": "ORDER",
+      "format": "TYPE_ONLY",
+      "filename": "order-type_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "c51558908a410244686ac5fe7cb7a369587f1581c8b4d4835a2b0fdfd549bcd9"
+    },
+    {
+      "system": "ORDER",
+      "format": "IMAGE_ONLY",
+      "filename": "order-image_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "040e9d4329dd4097d44fde301ffc2218d8b67c8df4549c6f536d05388cb05a0e"
+    },
+    {
+      "system": "SILENCE",
+      "format": "POSTER",
+      "filename": "silence-poster.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "497c208043746898f20dcb5ec6f4db6afa9c4a9b21398ba3d1ab7d16533160f8"
+    },
+    {
+      "system": "SILENCE",
+      "format": "SQUARE",
+      "filename": "silence-square.svg",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "032c486e77ac18e9e649ae515aa0467add5ee815f8e44a32da6fb658b4ef4864"
+    },
+    {
+      "system": "SILENCE",
+      "format": "EDITORIAL",
+      "filename": "silence-editorial.svg",
+      "width": 1200,
+      "height": 1600,
+      "sha256": "e39218948a79f89885fac8aeffd40647460d3b880e6e9c3edbb65211c6ffc2e3"
+    },
+    {
+      "system": "SILENCE",
+      "format": "BANNER",
+      "filename": "silence-banner.svg",
+      "width": 1600,
+      "height": 600,
+      "sha256": "192ff5207a641a01b61f44ed6d4bd7771c54c9c716195343da87f4e6a1a568c4"
+    },
+    {
+      "system": "SILENCE",
+      "format": "SOCIAL_PORTRAIT",
+      "filename": "silence-social_portrait.svg",
+      "width": 1080,
+      "height": 1350,
+      "sha256": "09106bee9a7827518c16ca9d3ecdc0440ba2e015f22c8cfa3cbba0b607ee5587"
+    },
+    {
+      "system": "SILENCE",
+      "format": "TYPE_ONLY",
+      "filename": "silence-type_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "32651c5c7491a2fcc4fd745e8fcf9a92df5daa4882b4569b7b18080e0e0dbb79"
+    },
+    {
+      "system": "SILENCE",
+      "format": "IMAGE_ONLY",
+      "filename": "silence-image_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "0b164d9f2ac53d3973a3e4406f2c312e1a333b6df5176751df1abd10dfd29a79"
+    },
+    {
+      "system": "TENSION",
+      "format": "POSTER",
+      "filename": "tension-poster.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "a2eb9f88ed49b7d98016f4dea0b66856f9338ab2ba582f87a191dad3d514f5ac"
+    },
+    {
+      "system": "TENSION",
+      "format": "SQUARE",
+      "filename": "tension-square.svg",
+      "width": 1000,
+      "height": 1000,
+      "sha256": "4834c60276a4cb561f6ec684777ad681faa88b50940b3f050eec92e918d17ee0"
+    },
+    {
+      "system": "TENSION",
+      "format": "EDITORIAL",
+      "filename": "tension-editorial.svg",
+      "width": 1200,
+      "height": 1600,
+      "sha256": "cd402f94b1154a0c24e0262e3f2ff5adc9be7f42755a4ec0f972f009b1f26769"
+    },
+    {
+      "system": "TENSION",
+      "format": "BANNER",
+      "filename": "tension-banner.svg",
+      "width": 1600,
+      "height": 600,
+      "sha256": "4e3ebbd66f24363ca10465c68e4e0eaaada76a189bc05073721f09137cef47ae"
+    },
+    {
+      "system": "TENSION",
+      "format": "SOCIAL_PORTRAIT",
+      "filename": "tension-social_portrait.svg",
+      "width": 1080,
+      "height": 1350,
+      "sha256": "55e2cd3dd96221ef8e65c77b006368fe84dc414f6f9de1723b372d94d80000e5"
+    },
+    {
+      "system": "TENSION",
+      "format": "TYPE_ONLY",
+      "filename": "tension-type_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "19ace275779220dbfbebc7be1bed462327c97bc09a4fb6a746f49fe1ed66e777"
+    },
+    {
+      "system": "TENSION",
+      "format": "IMAGE_ONLY",
+      "filename": "tension-image_only.svg",
+      "width": 900,
+      "height": 1200,
+      "sha256": "92801381922f8aabdacff8d9373dd0385d74a416fde71e24bbf9c67cf6004d61"
+    }
+  ]
+}

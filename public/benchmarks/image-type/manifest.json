@@ -1,0 +1,4989 @@
+{
+  "source": "Built-in geometric sample",
+  "parentSeed": 11,
+  "relationSeed": 18,
+  "intensity": 0.65,
+  "count": 24,
+  "entries": [
+    {
+      "system": "ORDER",
+      "kind": "SOURCE",
+      "filename": "order-source.svg",
+      "sha256": "40399e250978e039b13bff8637182855d21daeaa2da9a8f8ae44af4c9b6d37d4",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 462,
+              "y": 226,
+              "width": 366,
+              "height": 520
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 100,
+            "lineHeight": 106,
+            "letterSpacing": -4.5,
+            "weight": 500
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 190,
+              "width": 366,
+              "height": 790
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "contain",
+            "focalX": 0.5,
+            "focalY": 0.75
+          },
+          {
+            "kind": "texture",
+            "id": "texture",
+            "box": {
+              "x": 420,
+              "y": 190,
+              "width": 18,
+              "height": 790
+            },
+            "pattern": "lines",
+            "pitch": 8,
+            "opacity": 0.24
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ]
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "TYPE_MASK",
+      "filename": "order-type_mask.svg",
+      "sha256": "f8b7ca75d1051213e980e4e7d7477ef25b35ee338cd504758d018750811920de",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / type_mask",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 207.44999999999993,
+              "y": 102,
+              "width": 620.5500000000001,
+              "height": 794.3000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 186.99999999999997,
+            "lineHeight": 198.21999999999997,
+            "letterSpacing": -8.415,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 190,
+              "width": 366,
+              "height": 790
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "contain",
+            "focalX": 0.5,
+            "focalY": 0.75
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_MASK",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "TYPE_KNOCKOUT",
+      "filename": "order-type_knockout.svg",
+      "sha256": "c433889dfad2309ac0083e45fd94a103cbde401803ebc583aed6c916452a8031",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / type_knockout",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 123.69749999999999,
+              "y": 302.76,
+              "width": 413.58000000000004,
+              "height": 554.48
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 129,
+            "lineHeight": 136.74,
+            "letterSpacing": -5.805,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 102,
+              "width": 516.975,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_KNOCKOUT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "IMAGE_SLICE",
+      "filename": "order-image_slice.svg",
+      "sha256": "a0d2b4eda0e1f544914583010b9d089009eb55fb0ace75cb9449825e1b5b84bb",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / image_slice",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 462,
+              "y": 226,
+              "width": 366,
+              "height": 520
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 100,
+            "lineHeight": 106,
+            "letterSpacing": -4.5,
+            "weight": 500
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 117,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72,
+              "y": 117,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 138.0107142857143,
+              "y": 172,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72,
+              "y": 172,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 204.02142857142857,
+              "y": 117,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72.00000000000003,
+              "y": 117,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 270.03214285714284,
+              "y": 172,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72,
+              "y": 172,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 336.04285714285714,
+              "y": 117,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72,
+              "y": 117,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 402.05357142857144,
+              "y": 172,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 72,
+              "y": 172,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 468.06428571428575,
+              "y": 117,
+              "width": 66.01071428571429,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 71.99999999999994,
+              "y": 117,
+              "width": 462.07500000000005,
+              "height": 956
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "IMAGE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "TYPE_SLICE",
+      "filename": "order-type_slice.svg",
+      "sha256": "dd815689106dd17c5e20d0b4a0501d1789b35ace8270259ae31522d483c1d04f",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / type_slice",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 311.025,
+              "y": 184.05806758572572,
+              "width": 103.39500000000001,
+              "height": 743.6000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 151.25000000000003,
+            "lineHeight": 160.32500000000005,
+            "letterSpacing": -6.806250000000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 311.025,
+              "y": 184.05806758572572,
+              "width": 516.975,
+              "height": 743.6000000000001
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-1",
+            "box": {
+              "x": 414.41999999999996,
+              "y": 102,
+              "width": 103.39500000000001,
+              "height": 743.6000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 151.25000000000003,
+            "lineHeight": 160.32500000000005,
+            "letterSpacing": -6.806250000000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 311.025,
+              "y": 102,
+              "width": 516.975,
+              "height": 743.6000000000001
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-2",
+            "box": {
+              "x": 517.815,
+              "y": 188.02639960000516,
+              "width": 103.39500000000001,
+              "height": 743.6000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 151.25000000000003,
+            "lineHeight": 160.32500000000005,
+            "letterSpacing": -6.806250000000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 311.025,
+              "y": 188.02639960000516,
+              "width": 516.975,
+              "height": 743.6000000000001
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-3",
+            "box": {
+              "x": 621.21,
+              "y": 102,
+              "width": 103.39500000000001,
+              "height": 743.6000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 151.25000000000003,
+            "lineHeight": 160.32500000000005,
+            "letterSpacing": -6.806250000000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 311.025,
+              "y": 102,
+              "width": 516.975,
+              "height": 743.6000000000001
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-4",
+            "box": {
+              "x": 724.605,
+              "y": 196.6221100697526,
+              "width": 103.39500000000001,
+              "height": 743.6000000000001
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 151.25000000000003,
+            "lineHeight": 160.32500000000005,
+            "letterSpacing": -6.806250000000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 311.025,
+              "y": 196.62211006975258,
+              "width": 516.975,
+              "height": 743.6000000000001
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 190,
+              "width": 366,
+              "height": 790
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "contain",
+            "focalX": 0.5,
+            "focalY": 0.75
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "OVERPRINT",
+      "filename": "order-overprint.svg",
+      "sha256": "1b0eaf8c4d332aaf6d9156755f5e717233d2792fb67dcaa70ac50d28eed54b0d",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / overprint",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 102,
+              "width": 540.765,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 141.97977502732786,
+              "y": 379.24,
+              "width": 389.3508,
+              "height": 401.52
+            },
+            "lines": [
+              "A",
+              "study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 93.75,
+            "lineHeight": 99.375,
+            "letterSpacing": -4.21875,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "OVERPRINT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "OCCLUSION",
+      "filename": "order-occlusion.svg",
+      "sha256": "8d46293ea69003fc3da823ef7f6d847b428164339efe2e117c7ac3329edf840f",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / occlusion",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 254.48641874999998,
+              "y": 178.35500000000002,
+              "width": 480.375,
+              "height": 682.5
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 134.5,
+            "lineHeight": 142.57,
+            "letterSpacing": -6.0525,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 72,
+              "y": 102,
+              "width": 510.57,
+              "height": 956
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75
+          }
+        ],
+        "imageType": {
+          "kind": "OCCLUSION",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "ORDER",
+      "kind": "DISPLACEMENT",
+      "filename": "order-displacement.svg",
+      "sha256": "d6c39e4e69b7e4a041177570ea27a5e6fa4a50cb580eb7917ce86e403442fc82",
+      "document": {
+        "version": 1,
+        "system": "ORDER",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 72,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 106
+        },
+        "hierarchy": "Parallel / displacement",
+        "family": "Parallel",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 72,
+              "y": 72,
+              "width": 240,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 618,
+              "y": 72,
+              "width": 210,
+              "height": 24
+            },
+            "lines": [
+              "ORDER / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 37.25,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 37.25,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 106.75,
+              "y": 221.5,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 106.75,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 106.75,
+              "y": 341,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 106.75,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 37.25,
+              "y": 460.5,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 37.25,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 239.5,
+              "y": 580,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 239.5,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 239.5,
+              "y": 699.5,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 239.5,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 239.5,
+              "y": 819,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 239.5,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-7",
+            "box": {
+              "x": 37.25,
+              "y": 938.5,
+              "width": 468.4799999999999,
+              "height": 119.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.75,
+            "frame": {
+              "x": 37.25,
+              "y": 102,
+              "width": 468.4799999999999,
+              "height": 956
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 72,
+            "y1": 1016,
+            "x2": 828,
+            "y2": 1016
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 72,
+              "y": 1036,
+              "width": 626,
+              "height": 92
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 14,
+            "lineHeight": 21,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 377.82,
+              "y": 235.6395,
+              "width": 450.18,
+              "height": 639.6
+            },
+            "lines": [
+              "A",
+              "study",
+              "in",
+              "form."
+            ],
+            "font": "sans",
+            "fontSize": 126.25000000000001,
+            "lineHeight": 133.82500000000002,
+            "letterSpacing": -5.68125,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "DISPLACEMENT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "SOURCE",
+      "filename": "silence-source.svg",
+      "sha256": "d98436406724a98e4a78598d5c9b83ed98b85dcf001a9528b137cfccceb362f7",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 96,
+              "y": 690,
+              "width": 342,
+              "height": 180
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 56,
+            "lineHeight": 59.36,
+            "letterSpacing": -2.52,
+            "weight": 500
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 462,
+              "y": 245,
+              "width": 342,
+              "height": 350
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          },
+          {
+            "kind": "texture",
+            "id": "texture",
+            "box": {
+              "x": 96,
+              "y": 630,
+              "width": 66,
+              "height": 66
+            },
+            "pattern": "dots",
+            "pitch": 14,
+            "opacity": 0.25
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ]
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TYPE_MASK",
+      "filename": "silence-type_mask.svg",
+      "sha256": "b08caab10ee6bf6bb4dea537947ea0300b0edabaf7efc4476ce425d8ef415dc6",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / type_mask",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 96,
+              "y": 545.75,
+              "width": 620.5500000000001,
+              "height": 458.25
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 140,
+            "lineHeight": 148.4,
+            "letterSpacing": -6.3,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 462,
+              "y": 245,
+              "width": 342,
+              "height": 350
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_MASK",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TYPE_KNOCKOUT",
+      "filename": "silence-type_knockout.svg",
+      "sha256": "6f6bccf6bc9d4a40c54924f9964ef96e5d0ba41b7f9226c0888220bc97118009",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / type_knockout",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 369.23249999999996,
+              "y": 281.70625,
+              "width": 386.46000000000004,
+              "height": 276.5875
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 90,
+            "lineHeight": 95.4,
+            "letterSpacing": -4.05,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 320.92499999999995,
+              "y": 181.5625,
+              "width": 483.07500000000005,
+              "height": 476.875
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_KNOCKOUT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "IMAGE_SLICE",
+      "filename": "silence-image_slice.svg",
+      "sha256": "19fb4eadb5d9ede64621e8ac626a63bab81a6bd8cd24488cef6f62ffd9721725",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / image_slice",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 96,
+              "y": 690,
+              "width": 342,
+              "height": 180
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 56,
+            "lineHeight": 59.36,
+            "letterSpacing": -2.52,
+            "weight": 500
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 372.22499999999997,
+              "y": 141,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.22499999999997,
+              "y": 141,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 433.90714285714284,
+              "y": 276.3832142043626,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.2249999999999,
+              "y": 276.3832142043626,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 495.58928571428567,
+              "y": 141.31670230885504,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.225,
+              "y": 141.31670230885504,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 557.2714285714285,
+              "y": 283.33470886996946,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.2249999999999,
+              "y": 283.33470886996946,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 618.9535714285714,
+              "y": 141,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.2249999999999,
+              "y": 141,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 680.6357142857142,
+              "y": 281.0937907780055,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.225,
+              "y": 281.0937907780055,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 742.3178571428571,
+              "y": 141.05651762492488,
+              "width": 61.682142857142864,
+              "height": 430.5
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 372.2249999999999,
+              "y": 141.05651762492488,
+              "width": 431.77500000000003,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "IMAGE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TYPE_SLICE",
+      "filename": "silence-type_slice.svg",
+      "sha256": "1536d9b714063f1d0a533dfd7c4654f4a742a1a1b6aebd65dadab8f5243d26ff",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / type_slice",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 96,
+              "y": 721.1580675857258,
+              "width": 96.61500000000001,
+              "height": 257.40000000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 84.70000000000002,
+            "lineHeight": 89.78200000000002,
+            "letterSpacing": -3.8115000000000006,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 96,
+              "y": 721.1580675857258,
+              "width": 483.07500000000005,
+              "height": 257.40000000000003
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-1",
+            "box": {
+              "x": 192.615,
+              "y": 575.0847261037153,
+              "width": 96.61500000000001,
+              "height": 257.40000000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 84.70000000000002,
+            "lineHeight": 89.78200000000002,
+            "letterSpacing": -3.8115000000000006,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 96,
+              "y": 575.0847261037154,
+              "width": 483.07500000000005,
+              "height": 257.40000000000003
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-2",
+            "box": {
+              "x": 289.23,
+              "y": 725.1263996000052,
+              "width": 96.61500000000001,
+              "height": 257.40000000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 84.70000000000002,
+            "lineHeight": 89.78200000000002,
+            "letterSpacing": -3.8115000000000006,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 96,
+              "y": 725.1263996000052,
+              "width": 483.07500000000005,
+              "height": 257.40000000000003
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-3",
+            "box": {
+              "x": 385.845,
+              "y": 587.6130181244225,
+              "width": 96.61500000000001,
+              "height": 257.40000000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 84.70000000000002,
+            "lineHeight": 89.78200000000002,
+            "letterSpacing": -3.8115000000000006,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 96,
+              "y": 587.6130181244225,
+              "width": 483.07500000000005,
+              "height": 257.40000000000003
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-4",
+            "box": {
+              "x": 482.46000000000004,
+              "y": 733.7221100697526,
+              "width": 96.61500000000001,
+              "height": 257.40000000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 84.70000000000002,
+            "lineHeight": 89.78200000000002,
+            "letterSpacing": -3.8115000000000006,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 96,
+              "y": 733.7221100697527,
+              "width": 483.07500000000005,
+              "height": 257.40000000000003
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 462,
+              "y": 245,
+              "width": 342,
+              "height": 350
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "OVERPRINT",
+      "filename": "silence-overprint.svg",
+      "sha256": "9fd19984be5baee7f11d131b202db1ee40e8d01a48839a0bc72d5dc2ddbec457",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / overprint",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 298.695,
+              "y": 167.125,
+              "width": 505.305,
+              "height": 505.75
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 364.08593732061786,
+              "y": 313.7925,
+              "width": 363.8196,
+              "height": 212.415
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 82,
+            "lineHeight": 86.92,
+            "letterSpacing": -3.69,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "OVERPRINT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "OCCLUSION",
+      "filename": "silence-occlusion.svg",
+      "sha256": "b2fa30d3e8f635173b0d6c7be75484e8a3088ae68808a08a5da96cc592429de5",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / occlusion",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 183.59375624999998,
+              "y": 533.175,
+              "width": 448.875,
+              "height": 236.25
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 75.32,
+            "lineHeight": 79.83919999999999,
+            "letterSpacing": -3.3893999999999997,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 326.90999999999997,
+              "y": 190.3125,
+              "width": 477.09000000000003,
+              "height": 459.375
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5
+          }
+        ],
+        "imageType": {
+          "kind": "OCCLUSION",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "SILENCE",
+      "kind": "DISPLACEMENT",
+      "filename": "silence-displacement.svg",
+      "sha256": "1c86c35d9da49b614ba26a34fed6921fbe93651c054f93ef731231b9b3ea9cef",
+      "document": {
+        "version": 1,
+        "system": "SILENCE",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 96,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 98
+        },
+        "hierarchy": "Right image / diagonal / displacement",
+        "family": "Diagonal",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 96,
+              "y": 96,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 559,
+              "y": 96,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "SILENCE / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 331.49000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 331.49000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 400.99000000000007,
+              "y": 258.5625,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 400.99000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 400.99000000000007,
+              "y": 312.375,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 400.99000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 331.49000000000007,
+              "y": 366.1875,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 331.49000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 462.24000000000007,
+              "y": 420,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 462.24000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 462.24000000000007,
+              "y": 473.8125,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 462.24000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 462.24000000000007,
+              "y": 527.625,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 462.24000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-7",
+            "box": {
+              "x": 331.49000000000007,
+              "y": 581.4375,
+              "width": 437.75999999999993,
+              "height": 53.8125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.5,
+            "focalY": 0.5,
+            "frame": {
+              "x": 331.49000000000007,
+              "y": 204.75,
+              "width": 437.75999999999993,
+              "height": 430.5
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 96,
+            "y1": 1028,
+            "x2": 804,
+            "y2": 1028
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 96,
+              "y": 1046,
+              "width": 586,
+              "height": 58
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 12,
+            "lineHeight": 18,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 96,
+              "y": 582.8881875,
+              "width": 420.65999999999997,
+              "height": 221.4
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 70.70000000000002,
+            "lineHeight": 74.94200000000002,
+            "letterSpacing": -3.1815000000000007,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "DISPLACEMENT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "SOURCE",
+      "filename": "tension-source.svg",
+      "sha256": "01751dd21bf03de76e4364aa999a1c703bffcee9bdc0105e889ac7a0e0faba6a",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 212,
+              "width": 768,
+              "height": 506
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 198,
+              "y": 751,
+              "width": 636,
+              "height": 250
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 117,
+            "lineHeight": 124.02000000000001,
+            "letterSpacing": -5.265,
+            "weight": 500
+          },
+          {
+            "kind": "texture",
+            "id": "texture",
+            "box": {
+              "x": 66,
+              "y": 232,
+              "width": 768,
+              "height": 72
+            },
+            "pattern": "lines",
+            "pitch": 9,
+            "opacity": 0.34
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ]
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "TYPE_MASK",
+      "filename": "tension-type_mask.svg",
+      "sha256": "15275652e196db5156f77adab70218f0532a993bfb30a396193739a6fb4f66bf",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / type_mask",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 212,
+              "width": 768,
+              "height": 506
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 66,
+              "y": 575.75,
+              "width": 768,
+              "height": 458.25
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 179.84999999999997,
+            "lineHeight": 190.64099999999996,
+            "letterSpacing": -8.093249999999998,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_MASK",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "TYPE_KNOCKOUT",
+      "filename": "tension-type_knockout.svg",
+      "sha256": "e58423bbf86b21a5877789e8226c2e39e736ba2c78990d73ea2a4168c3a4f19a",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / type_knockout",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 120.28749999999997,
+              "width": 768,
+              "height": 689.4250000000001
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 142.79999999999995,
+              "y": 265.06674999999996,
+              "width": 614.4000000000001,
+              "height": 399.86650000000003
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 143.52,
+            "lineHeight": 152.1312,
+            "letterSpacing": -6.4584,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_KNOCKOUT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "IMAGE_SLICE",
+      "filename": "tension-image_slice.svg",
+      "sha256": "670ab32c99eef8902e01f70a74e66b619e0093b89163928dcd1dfaad2b356d51",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / image_slice",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 111,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 111,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 175.71428571428572,
+              "y": 225.4432142043626,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 225.44321420436262,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 285.42857142857144,
+              "y": 111,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 111,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 395.14285714285717,
+              "y": 232.39470886996946,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 232.39470886996946,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 504.85714285714283,
+              "y": 111,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66.00000000000006,
+              "y": 111,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 614.5714285714286,
+              "y": 230.1537907780055,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 230.1537907780055,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 724.2857142857143,
+              "y": 111,
+              "width": 109.71428571428571,
+              "height": 622.38
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 66,
+              "y": 111,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 198,
+              "y": 751,
+              "width": 636,
+              "height": 250
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 117,
+            "lineHeight": 124.02000000000001,
+            "letterSpacing": -5.265,
+            "weight": 500
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "IMAGE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "TYPE_SLICE",
+      "filename": "tension-type_slice.svg",
+      "sha256": "22ccab502cba6d799daee9e2d4b1ea3be0870f97a9ff7d77c2ec049fb9edbe91",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / type_slice",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 212,
+              "width": 768,
+              "height": 506
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 66,
+              "y": 746.3580675857258,
+              "width": 153.6,
+              "height": 357.50000000000006
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 167.96250000000003,
+            "lineHeight": 178.04025000000004,
+            "letterSpacing": -7.558312500000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 66,
+              "y": 746.3580675857258,
+              "width": 768,
+              "height": 357.50000000000006
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-1",
+            "box": {
+              "x": 219.6,
+              "y": 600.2847261037153,
+              "width": 153.6,
+              "height": 357.50000000000006
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 167.96250000000003,
+            "lineHeight": 178.04025000000004,
+            "letterSpacing": -7.558312500000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 66,
+              "y": 600.2847261037155,
+              "width": 768,
+              "height": 357.50000000000006
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-2",
+            "box": {
+              "x": 373.2,
+              "y": 750.3263996000053,
+              "width": 153.6,
+              "height": 357.50000000000006
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 167.96250000000003,
+            "lineHeight": 178.04025000000004,
+            "letterSpacing": -7.558312500000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 66,
+              "y": 750.3263996000053,
+              "width": 768,
+              "height": 357.50000000000006
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-3",
+            "box": {
+              "x": 526.8,
+              "y": 612.8130181244226,
+              "width": 153.6,
+              "height": 357.50000000000006
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 167.96250000000003,
+            "lineHeight": 178.04025000000004,
+            "letterSpacing": -7.558312500000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 66,
+              "y": 612.8130181244226,
+              "width": 768,
+              "height": 357.50000000000006
+            }
+          },
+          {
+            "kind": "text",
+            "id": "title-slice-4",
+            "box": {
+              "x": 680.4,
+              "y": 758.9221100697526,
+              "width": 153.6,
+              "height": 357.50000000000006
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 167.96250000000003,
+            "lineHeight": 178.04025000000004,
+            "letterSpacing": -7.558312500000001,
+            "weight": 600,
+            "tone": "ink",
+            "frame": {
+              "x": 66,
+              "y": 758.9221100697528,
+              "width": 768,
+              "height": 357.50000000000006
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          }
+        ],
+        "imageType": {
+          "kind": "TYPE_SLICE",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "OVERPRINT",
+      "filename": "tension-overprint.svg",
+      "sha256": "2385f74df705f579335470118c47fb21c85886523e0a403b79fa3d53abcee314",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / overprint",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 99.41499999999996,
+              "width": 768,
+              "height": 731.1700000000001
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 165.38599432468413,
+              "y": 311.4543,
+              "width": 552.96,
+              "height": 307.0914
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 129.31750000000002,
+            "lineHeight": 137.07655000000003,
+            "letterSpacing": -5.819287500000001,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "OVERPRINT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "OCCLUSION",
+      "filename": "tension-occlusion.svg",
+      "sha256": "e5c4efe79023bd493788d5b33c8f319dbaa8fb68194fb594afeedd8a1f5c2426",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / occlusion",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 66,
+              "y": 561.10984375,
+              "width": 768,
+              "height": 328.125
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 154.365,
+            "lineHeight": 163.6269,
+            "letterSpacing": -6.9464250000000005,
+            "weight": 600,
+            "tone": "ink"
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 66,
+              "y": 132.9375,
+              "width": 768,
+              "height": 664.125
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5
+          }
+        ],
+        "imageType": {
+          "kind": "OCCLUSION",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    },
+    {
+      "system": "TENSION",
+      "kind": "DISPLACEMENT",
+      "filename": "tension-displacement.svg",
+      "sha256": "6f97179855b3cb9e12b61ddae96ce2807712dffc15a289b6849cb5ea17235e58",
+      "document": {
+        "version": 1,
+        "system": "TENSION",
+        "seed": 11,
+        "width": 900,
+        "height": 1200,
+        "source": {
+          "title": "A study\nin form.",
+          "metadata": "Visual exploration\n2026 / No. 001",
+          "image": {
+            "id": "study-built-in-forms",
+            "name": "Forms / built-in sample",
+            "src": "/sample-study.svg",
+            "width": 1200,
+            "height": 900,
+            "origin": "sample"
+          }
+        },
+        "grid": {
+          "margin": 66,
+          "columns": 6,
+          "gutter": 24,
+          "columnWidth": 108
+        },
+        "hierarchy": "Right image / pressure / displacement",
+        "family": "Pressure",
+        "elements": [
+          {
+            "kind": "text",
+            "id": "edition",
+            "box": {
+              "x": 66,
+              "y": 66,
+              "width": 190,
+              "height": 24
+            },
+            "lines": [
+              "STUDY / 01"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "seed",
+            "box": {
+              "x": 589,
+              "y": 66,
+              "width": 245,
+              "height": 24
+            },
+            "lines": [
+              "TENSION / 000011"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "rule",
+            "id": "top-rule",
+            "x1": 66,
+            "y1": 151,
+            "x2": 834,
+            "y2": 151
+          },
+          {
+            "kind": "image",
+            "id": "source-image",
+            "box": {
+              "x": 31.25,
+              "y": 153.81,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 31.25,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-1",
+            "box": {
+              "x": 100.75,
+              "y": 231.60750000000002,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 100.75,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-2",
+            "box": {
+              "x": 100.75,
+              "y": 309.405,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 100.75,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-3",
+            "box": {
+              "x": 31.25,
+              "y": 387.2025,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 31.25,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-4",
+            "box": {
+              "x": 132,
+              "y": 465,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 132,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-5",
+            "box": {
+              "x": 132,
+              "y": 542.7975,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 132,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-6",
+            "box": {
+              "x": 132,
+              "y": 620.595,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 132,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "image",
+            "id": "source-image-slice-7",
+            "box": {
+              "x": 31.25,
+              "y": 698.3924999999999,
+              "width": 768,
+              "height": 77.7975
+            },
+            "asset": {
+              "id": "study-built-in-forms",
+              "name": "Forms / built-in sample",
+              "src": "/sample-study.svg",
+              "width": 1200,
+              "height": 900,
+              "origin": "sample"
+            },
+            "fit": "cover",
+            "focalX": 0.2,
+            "focalY": 0.5,
+            "frame": {
+              "x": 31.25,
+              "y": 153.81,
+              "width": 768,
+              "height": 622.38
+            }
+          },
+          {
+            "kind": "rule",
+            "id": "footer-rule",
+            "x1": 66,
+            "y1": 1022,
+            "x2": 834,
+            "y2": 1022
+          },
+          {
+            "kind": "text",
+            "id": "metadata",
+            "box": {
+              "x": 66,
+              "y": 1044,
+              "width": 636,
+              "height": 90
+            },
+            "lines": [
+              "Visual exploration",
+              "2026 / No. 001"
+            ],
+            "font": "mono",
+            "fontSize": 13,
+            "lineHeight": 19.5,
+            "letterSpacing": 0,
+            "weight": 400
+          },
+          {
+            "kind": "text",
+            "id": "title",
+            "box": {
+              "x": 66,
+              "y": 629.3394225,
+              "width": 768,
+              "height": 307.5
+            },
+            "lines": [
+              "A study",
+              "in form."
+            ],
+            "font": "sans",
+            "fontSize": 144.71250000000003,
+            "lineHeight": 153.39525000000003,
+            "letterSpacing": -6.512062500000002,
+            "weight": 600,
+            "tone": "ink"
+          }
+        ],
+        "imageType": {
+          "kind": "DISPLACEMENT",
+          "intensity": 0.65,
+          "seed": 18
+        }
+      }
+    }
+  ]
+}

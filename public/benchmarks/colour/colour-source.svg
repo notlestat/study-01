@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <title>Forms, a geometric image authored for STUDY/01</title>
+  <rect width="1200" height="900" fill="#d8cbb9"/>
+  <path d="M0 720H1200V900H0Z" fill="#b0a394"/>
+  <path d="M600 684 1078 812 1200 746 764 588Z" fill="#886f67"/>
+  <path d="M213 638 501 745 809 610 510 512Z" fill="#a78e88"/>
+  <path d="M254 278 496 208 496 629 254 699Z" fill="#e9dcc8"/>
+  <path d="M496 208 628 255 628 676 496 629Z" fill="#707a82"/>
+  <path d="M254 278 385 323 628 255 496 208Z" fill="#f7ead5"/>
+  <path d="M696 426 840 384 840 663 696 705Z" fill="#6a332b"/>
+  <path d="M840 384 934 416 934 695 840 663Z" fill="#3d2927"/>
+  <path d="M696 426 790 458 934 416 840 384Z" fill="#87665b"/>
+  <circle cx="754" cy="246" r="80" fill="#dfd7c7"/>
+  <path d="M754 166a80 80 0 0 1 0 160Z" fill="#8b9ca2"/>
+</svg>

@@ -1,0 +1,194 @@
+{
+  "count": 27,
+  "entries": [
+    {
+      "system": "ORDER",
+      "mode": "SLIP",
+      "seconds": 0,
+      "filename": "order-slip-0.svg",
+      "hash": "6d4d1ce1b9d48726a3c47ce9d8b464f7a27fdf1c3179e830118182ce043ceccc"
+    },
+    {
+      "system": "ORDER",
+      "mode": "SLIP",
+      "seconds": 2,
+      "filename": "order-slip-1.svg",
+      "hash": "aec895dfd1b567ec012912903291ec999f87c8acef0823ccb62e9a3f2da70522"
+    },
+    {
+      "system": "ORDER",
+      "mode": "SLIP",
+      "seconds": 4,
+      "filename": "order-slip-2.svg",
+      "hash": "e1d2b4ad090646ebfffb43af5c3599533489e0f1bbc226bd55c4ffdeba8f115f"
+    },
+    {
+      "system": "ORDER",
+      "mode": "DECAY",
+      "seconds": 0,
+      "filename": "order-decay-0.svg",
+      "hash": "6d4d1ce1b9d48726a3c47ce9d8b464f7a27fdf1c3179e830118182ce043ceccc"
+    },
+    {
+      "system": "ORDER",
+      "mode": "DECAY",
+      "seconds": 2,
+      "filename": "order-decay-1.svg",
+      "hash": "5efec4e60027934fa12bb7d729887620cfefeb363ec5b1ef53cb85dcf29ee307"
+    },
+    {
+      "system": "ORDER",
+      "mode": "DECAY",
+      "seconds": 4,
+      "filename": "order-decay-2.svg",
+      "hash": "fcf364d695a9cfa6f8b8936de06c86df155307b7b4cba84d12e3dc8f288c596a"
+    },
+    {
+      "system": "ORDER",
+      "mode": "REPEAT",
+      "seconds": 0,
+      "filename": "order-repeat-0.svg",
+      "hash": "6d4d1ce1b9d48726a3c47ce9d8b464f7a27fdf1c3179e830118182ce043ceccc"
+    },
+    {
+      "system": "ORDER",
+      "mode": "REPEAT",
+      "seconds": 2,
+      "filename": "order-repeat-1.svg",
+      "hash": "bc3cfed439328fdc019e65ad835c15416e08738b74e3921b10bd17b0b99338a4"
+    },
+    {
+      "system": "ORDER",
+      "mode": "REPEAT",
+      "seconds": 4,
+      "filename": "order-repeat-2.svg",
+      "hash": "1f91d67d651e5261c00e945e76bd1cccb7f275ac593a9509a3221c1898aa7129"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "SLIP",
+      "seconds": 0,
+      "filename": "silence-slip-0.svg",
+      "hash": "90d1ebd772f306aebfb94ed42022ce83b9a0f1d8a94b3880e5c9665ee5d41741"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "SLIP",
+      "seconds": 2,
+      "filename": "silence-slip-1.svg",
+      "hash": "bd9bc9b0aed2fc8d855b25219fddb5ae6f2d8d130f17184ec4f0159683d49a83"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "SLIP",
+      "seconds": 4,
+      "filename": "silence-slip-2.svg",
+      "hash": "568eadd95b637d4119d3da4170c22a2fa7917c7fa8871ca711fb78e1c28d9111"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "DECAY",
+      "seconds": 0,
+      "filename": "silence-decay-0.svg",
+      "hash": "90d1ebd772f306aebfb94ed42022ce83b9a0f1d8a94b3880e5c9665ee5d41741"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "DECAY",
+      "seconds": 2,
+      "filename": "silence-decay-1.svg",
+      "hash": "f223f52980e440b7f295585360e06c41a8049587a2b0c99236565ce556869ec8"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "DECAY",
+      "seconds": 4,
+      "filename": "silence-decay-2.svg",
+      "hash": "3849edffa7e6ce3f34f5c155d33635e487640d83e9fcdf3d3665a8bc4b9b4a58"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "REPEAT",
+      "seconds": 0,
+      "filename": "silence-repeat-0.svg",
+      "hash": "90d1ebd772f306aebfb94ed42022ce83b9a0f1d8a94b3880e5c9665ee5d41741"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "REPEAT",
+      "seconds": 2,
+      "filename": "silence-repeat-1.svg",
+      "hash": "ae78279997a88a9cd9a508e05db1ee46307e468722f87af1595d2b635065d159"
+    },
+    {
+      "system": "SILENCE",
+      "mode": "REPEAT",
+      "seconds": 4,
+      "filename": "silence-repeat-2.svg",
+      "hash": "7c4415616eb4f6d2545dddf0ef5ca2a6c8b13c5d6cf68e4f4f69500aad1dcf08"
+    },
+    {
+      "system": "TENSION",
+      "mode": "SLIP",
+      "seconds": 0,
+      "filename": "tension-slip-0.svg",
+      "hash": "2fe39f34cbd9a9ae8e0c6b30b0e0aaf786c7764708bc360e4f0f4ffa16d61f21"
+    },
+    {
+      "system": "TENSION",
+      "mode": "SLIP",
+      "seconds": 2,
+      "filename": "tension-slip-1.svg",
+      "hash": "114ac6f1f03b732cfd358ec810737a9f3475177600abfd4a0645c67546dd1ee8"
+    },
+    {
+      "system": "TENSION",
+      "mode": "SLIP",
+      "seconds": 4,
+      "filename": "tension-slip-2.svg",
+      "hash": "f5c5b85ccce5d14e6feb924a0ad4293144d1ca89f15ccc26b53019e51bd43661"
+    },
+    {
+      "system": "TENSION",
+      "mode": "DECAY",
+      "seconds": 0,
+      "filename": "tension-decay-0.svg",
+      "hash": "2fe39f34cbd9a9ae8e0c6b30b0e0aaf786c7764708bc360e4f0f4ffa16d61f21"
+    },
+    {
+      "system": "TENSION",
+      "mode": "DECAY",
+      "seconds": 2,
+      "filename": "tension-decay-1.svg",
+      "hash": "b2cc0b525795491f369095ab9f9df77e689ba15eb1feef85a1a0e9cdfbbdd6cf"
+    },
+    {
+      "system": "TENSION",
+      "mode": "DECAY",
+      "seconds": 4,
+      "filename": "tension-decay-2.svg",
+      "hash": "f9c7e48364eb1e7a69605ed862d5af165abfddf5535bb8bf43ad91f47f259bbb"
+    },
+    {
+      "system": "TENSION",
+      "mode": "REPEAT",
+      "seconds": 0,
+      "filename": "tension-repeat-0.svg",
+      "hash": "2fe39f34cbd9a9ae8e0c6b30b0e0aaf786c7764708bc360e4f0f4ffa16d61f21"
+    },
+    {
+      "system": "TENSION",
+      "mode": "REPEAT",
+      "seconds": 2,
+      "filename": "tension-repeat-1.svg",
+      "hash": "68fc3f07403bc9c07d1b885b300c34e21dec48354255faf881aaabd685c99af3"
+    },
+    {
+      "system": "TENSION",
+      "mode": "REPEAT",
+      "seconds": 4,
+      "filename": "tension-repeat-2.svg",
+      "hash": "87d4c67789f0eb3e2431a535373bab1d2a10ef47da4c197db13b4a195c25a9d8"
+    }
+  ]
+}

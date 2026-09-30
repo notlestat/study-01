@@ -1,0 +1,202 @@
+{
+  "count": 18,
+  "source": "Built-in sample / same source as frozen baseline",
+  "baseSeed": 11,
+  "donorSeed": 18,
+  "weights": [
+    0.35,
+    0.75
+  ],
+  "signatureCount": 7,
+  "structuralSignatures": [
+    "ORDER:overlap:narrow-type",
+    "ORDER:overlap:wide-type",
+    "SILENCE:image-above:narrow-type",
+    "SILENCE:title-left:narrow-type",
+    "SILENCE:overlap:narrow-type",
+    "TENSION:image-above:wide-type",
+    "TENSION:overlap:wide-type"
+  ],
+  "entries": [
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "ORDER",
+      "weight": 0.35,
+      "filename": "order-order-35.svg",
+      "signature": "ORDER:overlap:narrow-type",
+      "titleSize": 100,
+      "imageArea": 0.268,
+      "sha256": "76bcd8d00bcde0658e9575bcec14096f55b0314248055b8de730f3c95e7e811e"
+    },
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "ORDER",
+      "weight": 0.75,
+      "filename": "order-order-75.svg",
+      "signature": "ORDER:overlap:wide-type",
+      "titleSize": 100,
+      "imageArea": 0.148,
+      "sha256": "e4984b435af5c0970b8c93f3196d3a0eecf5b645066df62fdd9a373209954ef6"
+    },
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "SILENCE",
+      "weight": 0.35,
+      "filename": "order-silence-35.svg",
+      "signature": "ORDER:overlap:narrow-type",
+      "titleSize": 81.8,
+      "imageArea": 0.268,
+      "sha256": "9f5969270939af5db5d55e62af233ceb88d6229e6b06599fdad879ef02e12a25"
+    },
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "SILENCE",
+      "weight": 0.75,
+      "filename": "order-silence-75.svg",
+      "signature": "ORDER:overlap:wide-type",
+      "titleSize": 61,
+      "imageArea": 0.08,
+      "sha256": "43c9006d46553995b1fa3671b262fb560286818a9a8c6ecb1a8cdb8ef10a16d2"
+    },
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "TENSION",
+      "weight": 0.35,
+      "filename": "order-tension-35.svg",
+      "signature": "ORDER:overlap:narrow-type",
+      "titleSize": 104.2,
+      "imageArea": 0.268,
+      "sha256": "874059f2f08fe7e83f86126d99ee9e68609aae0aa28b5569559d6d56a16a5cbd"
+    },
+    {
+      "baseSystem": "ORDER",
+      "donorSystem": "TENSION",
+      "weight": 0.75,
+      "filename": "order-tension-75.svg",
+      "signature": "ORDER:overlap:narrow-type",
+      "titleSize": 109,
+      "imageArea": 0.099,
+      "sha256": "7fd03cfa4ae16e1ced4046c135af6013c68c790838b5fdb905f75241c3b9c483"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "ORDER",
+      "weight": 0.35,
+      "filename": "silence-order-35.svg",
+      "signature": "SILENCE:image-above:narrow-type",
+      "titleSize": 71.4,
+      "imageArea": 0.111,
+      "sha256": "7aaf9510278c638f3bce383b121dbdb41760b551849e99df98e802c4ea432369"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "ORDER",
+      "weight": 0.75,
+      "filename": "silence-order-75.svg",
+      "signature": "SILENCE:image-above:narrow-type",
+      "titleSize": 83,
+      "imageArea": 0.061,
+      "sha256": "1f0e4cee2570e2beda7154f7bb4613257e573688a9dd6e124e0d46ce8bb26649"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "SILENCE",
+      "weight": 0.35,
+      "filename": "silence-silence-35.svg",
+      "signature": "SILENCE:title-left:narrow-type",
+      "titleSize": 53.2,
+      "imageArea": 0.111,
+      "sha256": "17aca9da008aa9579e0571b5a4d5384b580238b5f11a435e57ad57779f573cd3"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "SILENCE",
+      "weight": 0.75,
+      "filename": "silence-silence-75.svg",
+      "signature": "SILENCE:overlap:narrow-type",
+      "titleSize": 50,
+      "imageArea": 0.033,
+      "sha256": "fce81ab9a4e4426e6f430c94dc98413f3ce3ce04ad715acfb8690bbe9c0be773"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "TENSION",
+      "weight": 0.35,
+      "filename": "silence-tension-35.svg",
+      "signature": "SILENCE:overlap:narrow-type",
+      "titleSize": 75.6,
+      "imageArea": 0.111,
+      "sha256": "a9dd8ea5251aeed4f82accf45fc6a86cdfaa602ea4c8f03c7925584ec9cabebb"
+    },
+    {
+      "baseSystem": "SILENCE",
+      "donorSystem": "TENSION",
+      "weight": 0.75,
+      "filename": "silence-tension-75.svg",
+      "signature": "SILENCE:overlap:narrow-type",
+      "titleSize": 80,
+      "imageArea": 0.041,
+      "sha256": "3d31c0ed53491b41c9a796db06e7bd472b87a3c70cbfdbc8f867a97640eec6d6"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "ORDER",
+      "weight": 0.35,
+      "filename": "tension-order-35.svg",
+      "signature": "TENSION:image-above:wide-type",
+      "titleSize": 111.05,
+      "imageArea": 0.36,
+      "sha256": "a454f0dc3a3c4be9f04769a7c93b7934063c299b04d70f063df0b0eefdf06af4"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "ORDER",
+      "weight": 0.75,
+      "filename": "tension-order-75.svg",
+      "signature": "TENSION:image-above:wide-type",
+      "titleSize": 104.25,
+      "imageArea": 0.198,
+      "sha256": "3a6b60320b9469d0b700a23f464e82485745b0c62f1b8c0f249d24c46510bcea"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "SILENCE",
+      "weight": 0.35,
+      "filename": "tension-silence-35.svg",
+      "signature": "TENSION:overlap:wide-type",
+      "titleSize": 92.85,
+      "imageArea": 0.36,
+      "sha256": "c5a02f18c2aa7cb5275d242f091bf40d63987eb0516c56fb7a2ee0324ab64f6f"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "SILENCE",
+      "weight": 0.75,
+      "filename": "tension-silence-75.svg",
+      "signature": "TENSION:overlap:wide-type",
+      "titleSize": 65.25,
+      "imageArea": 0.108,
+      "sha256": "10c6a37e15aa54d6043ed2fc164861cdf8c4865f09450de97a0d24efc00801d3"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "TENSION",
+      "weight": 0.35,
+      "filename": "tension-tension-35.svg",
+      "signature": "TENSION:overlap:wide-type",
+      "titleSize": 115.25,
+      "imageArea": 0.36,
+      "sha256": "4b1f1cb5d9116539342f4ab525f3732ae8c1cfcb002115c48bd21ef8ae6dc8b0"
+    },
+    {
+      "baseSystem": "TENSION",
+      "donorSystem": "TENSION",
+      "weight": 0.75,
+      "filename": "tension-tension-75.svg",
+      "signature": "TENSION:overlap:wide-type",
+      "titleSize": 113.25,
+      "imageArea": 0.133,
+      "sha256": "3143905eeeff9734c2ee44cfb110089aae3a99ace3429504e4ee49e58794afa1"
+    }
+  ]
+}

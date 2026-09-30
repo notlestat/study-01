@@ -13,6 +13,22 @@ export interface ImageAsset {
   width: number;
   height: number;
   origin: 'sample' | 'local';
+  analysis?: ImageAnalysis;
+}
+
+export interface ImageAnalysis {
+  meanLuminance: number;
+  contrast: number;
+  edgeDensity: number;
+  balanceX: number;
+  balanceY: number;
+  focalX: number;
+  focalY: number;
+  quietX: number;
+  quietY: number;
+  quietLuminance: number;
+  /** Three image-derived RGB samples, darkest to lightest; optional for older saved images. */
+  palette?: [string, string, string];
 }
 
 export interface CompositionInput {

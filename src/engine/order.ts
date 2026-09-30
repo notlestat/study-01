@@ -21,7 +21,9 @@ export function generateOrder({ input, seed }: OrderRequest): CompositionDocumen
   const columnWidth = (contentWidth - (columns - 1) * gutter) / columns;
   const spanWidth = (span: number) => span * columnWidth + (span - 1) * gutter;
   const columnX = (column: number) => margin + column * (columnWidth + gutter);
-  const hierarchy = choose(random, ['Title first', 'Image first'] as const);
+  const family = seed % 3 === 1 ? 'Stack' : seed % 3 === 2 ? 'Parallel' : 'Inset';
+  const stackHierarchy = choose(random, ['Title first', 'Image first'] as const);
+  const hierarchy = family === 'Stack' ? stackHierarchy : family;
   const titleHeight = choose(random, [240, 272, 304]);
   const gap = choose(random, [36, 48]);
   const preferredTypeSize = choose(random, [88, 100, 112]);
@@ -35,18 +37,30 @@ export function generateOrder({ input, seed }: OrderRequest): CompositionDocumen
     : choose(random, [columns - 1, columns]);
   const imageColumn = choose(random, [0, columns - imageSpan]);
   const titleSpan = choose(random, [columns - 1, columns]);
-  const titleBox: Box = {
+  let titleBox: Box = {
     x: margin,
-    y: hierarchy === 'Title first' ? bodyTop : bodyTop + imageHeight + gap,
+    y: stackHierarchy === 'Title first' ? bodyTop : bodyTop + imageHeight + gap,
     width: spanWidth(titleSpan),
     height: titleHeight,
   };
-  const imageBox: Box = {
+  let imageBox: Box = {
     x: columnX(imageColumn),
-    y: hierarchy === 'Title first' ? bodyTop + titleHeight + gap : bodyTop,
+    y: stackHierarchy === 'Title first' ? bodyTop + titleHeight + gap : bodyTop,
     width: spanWidth(imageSpan),
     height: imageHeight,
   };
+  if (family === 'Parallel') {
+    const imageColumns = Math.ceil(columns / 2);
+    const titleColumns = columns - imageColumns;
+    const imageOnLeft = choose(random, [true, false]);
+    imageBox = { x: imageOnLeft ? margin : columnX(titleColumns), y: bodyTop + 46, width: spanWidth(imageColumns), height: bodyBottom - bodyTop - 46 };
+    titleBox = { x: imageOnLeft ? columnX(imageColumns) : margin, y: bodyTop + 82, width: spanWidth(titleColumns), height: 520 };
+  } else if (family === 'Inset') {
+    const insetSpan = Math.max(2, columns - 2);
+    const insetColumn = choose(random, [0, columns - insetSpan]);
+    imageBox = { x: columnX(insetColumn), y: bodyTop + 12, width: spanWidth(insetSpan), height: 500 };
+    titleBox = { x: margin, y: bodyTop + 570, width: spanWidth(columns), height: 250 };
+  }
   const ratioDifference = (image.width / image.height) / (imageBox.width / imageBox.height);
   const imageElement: ImageElement = {
     kind: 'image', id: 'source-image', box: imageBox,
@@ -61,7 +75,7 @@ export function generateOrder({ input, seed }: OrderRequest): CompositionDocumen
     version: 1, system: 'ORDER', seed, width, height,
     source: { ...input, image: { ...image } },
     grid: { margin, columns, gutter, columnWidth },
-    hierarchy,
+    hierarchy, family,
     elements: [
       fitText('edition', 'STUDY / 01', { x: margin, y: margin, width: 240, height: 24 }, 13, 'mono'),
       fitText('seed', `ORDER / ${String(seed).padStart(6, '0')}`, { x: width - margin - 210, y: margin, width: 210, height: 24 }, 13, 'mono'),
