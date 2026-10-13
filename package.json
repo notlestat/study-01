@@ -18,7 +18,8 @@
     "benchmark:typography": "node scripts/render-typography-review.mjs",
     "benchmark:family": "node scripts/render-family-review.mjs",
     "benchmark:drift": "node scripts/render-drift-review.mjs",
-    "benchmark:colour": "node scripts/render-colour-review.mjs"
+    "benchmark:colour": "node scripts/render-colour-review.mjs",
+    "benchmark:transform": "node scripts/render-transform-review.mjs"
   },
   "type": "module",
   "dependencies": {

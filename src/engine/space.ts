@@ -1,5 +1,6 @@
 import type { CompositionLocks } from '../domain/composition.ts';
-import type { Box, CompositionDocument, CompositionElement, ImageElement, SpaceZone, TextElement } from '../domain/document.ts';
+import type { Box, CompositionDocument, CompositionElement, SpaceZone } from '../domain/document.ts';
+import { visualBounds } from './placement.ts';
 import { fitText } from './text.ts';
 
 const overlaps = (a: Box, b: Box): boolean => a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
@@ -87,12 +88,18 @@ export function applySpaceZones(document: CompositionDocument, zones: SpaceZone[
   const contentTop = margin + 32;
   const intersectsAny = (box: Box) => zones.some((zone) => intersectsZone(box, zone));
   const main = (element: CompositionElement) => element.kind === 'image' || element.id === 'title';
-  const occupied: Box[] = document.elements.filter((element) => 'box' in element && main(element) && !intersectsAny(element.box)).map((element) => (element as ImageElement | TextElement).box);
-  const reserved: Box[] = document.elements.filter((element) => element.kind === 'text' && element.id !== 'title' && !intersectsAny(element.box)).map((element) => (element as TextElement).box);
+  const occupied: Box[] = document.elements.filter((element) => main(element) && !(element.kind === 'image' && element.material) && !intersectsAny(visualBounds(element))).map(visualBounds);
+  const reserved: Box[] = document.elements.filter((element) => element.kind === 'text' && element.id !== 'title' && !intersectsAny(visualBounds(element))).map(visualBounds);
   const result = new Map<string, CompositionElement>();
   const ordered = [...document.elements].sort((a, b) => Number(main(b)) - Number(main(a)));
 
   for (const element of ordered) {
+    if (element.kind === 'image' && element.material) { result.set(element.id, element); continue; }
+    if (element.transform) {
+      if (intersectsAny(visualBounds(element))) throw new Error('An adjusted layer crosses the SPACE zone. Reset its placement or move the zone.');
+      result.set(element.id, element);
+      continue;
+    }
     if (element.kind === 'rule') {
       const ruleBox = { x: Math.min(element.x1, element.x2), y: Math.min(element.y1, element.y2) - 1, width: Math.max(1, Math.abs(element.x2 - element.x1)), height: Math.max(2, Math.abs(element.y2 - element.y1)) };
       if (intersectsAny(ruleBox)) {

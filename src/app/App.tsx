@@ -181,6 +181,7 @@ export function App() {
       const target = event.target;
       if (target instanceof HTMLElement && (target.matches('input, textarea, select') || target.isContentEditable)) return;
       if (modifier && key === 'z') { event.preventDefault(); if (event.shiftKey) study.redo(); else study.undo(); }
+      else if (modifier && key === 'y') { event.preventDefault(); study.redo(); }
       else if (modifier && key === 's') { event.preventDefault(); void study.saveCurrentVariation(); }
       else if (!modifier && !event.altKey) {
         if (key === 'g') study.generate();
@@ -252,7 +253,7 @@ export function App() {
             onUseSample={study.useSampleImage}
           />}
         canvas={view === 'compose' || view === 'output'
-          ? <CompositionCanvas document={document} previous={view === 'compose' ? study.previousDocument : undefined} zoom={zoom} onZoomChange={setZoom} dirty={study.dirty} generationCount={study.generationCount} svgRef={svgRef} focus={focus} onToggleFocus={() => setFocus((value) => !value)} />
+          ? <CompositionCanvas document={document} locks={session.locks} canEdit={view === 'compose' && !study.dirty && !study.imageLoading && !study.materialLoading} canUndo={study.canUndo} canRedo={study.canRedo} onUndo={study.undo} onRedo={study.redo} onEdit={study.editCanvas} onMaterial={study.importMaterial} materialLoading={study.materialLoading} previous={view === 'compose' ? study.previousDocument : undefined} zoom={zoom} onZoomChange={setZoom} dirty={study.dirty} generationCount={study.generationCount} svgRef={svgRef} focus={focus} onToggleFocus={() => setFocus((value) => !value)} />
           : view === 'proof'
             ? <ProofSheet proofs={study.proofs} selectedIds={study.selectedProofIds} canProof={study.canProof} storageReady={study.storageReady} saving={study.saving} focus={focus} onToggleFocus={() => setFocus((value) => !value)} onGenerate={study.makeProof} onSelect={study.toggleProofSelection} onKeep={study.keepProof} onReject={study.rejectProof} onDevelop={(id) => { study.developProof(id); setView('compose'); }} />
             : view === 'direct'

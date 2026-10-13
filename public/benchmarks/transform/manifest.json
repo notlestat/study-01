@@ -1,0 +1,117 @@
+{
+  "count": 18,
+  "parentSeed": 11,
+  "treatmentSeed": 18,
+  "intensity": 0.7,
+  "readability": 0.35,
+  "entries": [
+    {
+      "system": "ORDER",
+      "kind": "SOURCE",
+      "filename": "order-source.svg",
+      "sha256": "28508135cbb42a0fe9d5625b913d29e724a3a3620b53f354f9e00acea0a9a9c2"
+    },
+    {
+      "system": "ORDER",
+      "kind": "IMAGE_OFFSET",
+      "filename": "order-image_offset.svg",
+      "sha256": "9c788775d05ad37d2e7ffeef2c4093a944e454eb7f1308b11ad4c2cc43c41900"
+    },
+    {
+      "system": "ORDER",
+      "kind": "TYPE_ROTATION",
+      "filename": "order-type_rotation.svg",
+      "sha256": "666768bb0cd00a79d2a39d08743d003f3e3a34499c459ec9b883c45782727ed6"
+    },
+    {
+      "system": "ORDER",
+      "kind": "IMAGE_STRETCH",
+      "filename": "order-image_stretch.svg",
+      "sha256": "11176777c6beeb1d6f0c9a86ba698a0fa0c4f94eb84bd0e2cde65eafcd142119"
+    },
+    {
+      "system": "ORDER",
+      "kind": "GLYPH_PLACEMENT",
+      "filename": "order-glyph_placement.svg",
+      "sha256": "147bb53d3fc8ac3fff93cb90f2999a8d295c8e314912003d40c66143f02d0ffc"
+    },
+    {
+      "system": "ORDER",
+      "kind": "LOCAL_MATERIAL",
+      "filename": "order-local_material.svg",
+      "sha256": "da5cd74e7fe7306c3238c60106b1d405761855e58459315c326393b595892c60"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "SOURCE",
+      "filename": "silence-source.svg",
+      "sha256": "6d1b959526746ed0de94d34386aa06740690a541aa46d13fd0bdeff2c81b05cb"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "IMAGE_OFFSET",
+      "filename": "silence-image_offset.svg",
+      "sha256": "8337a03863f7cd3990f670f0539513fddfbefca857e265c8876821d349da5f39"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "TYPE_ROTATION",
+      "filename": "silence-type_rotation.svg",
+      "sha256": "fb27f4beb068ed2a808f9faa5183841215c098323e2caad0137e9581e3864591"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "IMAGE_STRETCH",
+      "filename": "silence-image_stretch.svg",
+      "sha256": "0938ecf153aeb59197011c8041c1901904d4a7265784da34746ea5b55acca324"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "GLYPH_PLACEMENT",
+      "filename": "silence-glyph_placement.svg",
+      "sha256": "0757f54a0f1b70a0da038372e360d84b74c9d45c460aff392fa1b84b5d38b324"
+    },
+    {
+      "system": "SILENCE",
+      "kind": "LOCAL_MATERIAL",
+      "filename": "silence-local_material.svg",
+      "sha256": "a5204fca84ec7e2072182252dd1d3be539968c26100f3bc87298fe397bcab2c8"
+    },
+    {
+      "system": "TENSION",
+      "kind": "SOURCE",
+      "filename": "tension-source.svg",
+      "sha256": "8e25fdb5fad41ad34f14c13bd0110fccf416a47437d177f85cfc80b851df3e47"
+    },
+    {
+      "system": "TENSION",
+      "kind": "IMAGE_OFFSET",
+      "filename": "tension-image_offset.svg",
+      "sha256": "adef8343e3620c5c097573b5d45c28a8a527705d9de52645e54b04cb8ebd818d"
+    },
+    {
+      "system": "TENSION",
+      "kind": "TYPE_ROTATION",
+      "filename": "tension-type_rotation.svg",
+      "sha256": "bc7582924e40701dcaf2df722189d4dc8550345ed2d3966ff8798782f9f19f04"
+    },
+    {
+      "system": "TENSION",
+      "kind": "IMAGE_STRETCH",
+      "filename": "tension-image_stretch.svg",
+      "sha256": "23cd21248a6dcb9ecea2c9847d2fd0db22a88aa912ec4149c786eed54390a513"
+    },
+    {
+      "system": "TENSION",
+      "kind": "GLYPH_PLACEMENT",
+      "filename": "tension-glyph_placement.svg",
+      "sha256": "dc720a0d1eafa7aa5579f435080b1160b7270b2449be6d5de41e1f60e65f0f48"
+    },
+    {
+      "system": "TENSION",
+      "kind": "LOCAL_MATERIAL",
+      "filename": "tension-local_material.svg",
+      "sha256": "bc08d078752acc8940bd481952b13497efbdb635d818289ddfc02e70bf4c0224"
+    }
+  ]
+}

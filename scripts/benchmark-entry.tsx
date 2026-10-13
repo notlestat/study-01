@@ -13,6 +13,7 @@ import { CompositionRenderer } from '../src/components/canvas/CompositionRendere
 import type { CompositionDocument } from '../src/domain/document.ts';
 
 export { generateComposition, applyOperation, applySpaceZones, applyImageType, crossbreedCompositions, applyTypography, generateFamily, driftFrame, withColour };
+export { transformElement, elementPose, addMaterial, updateMaterial, orderElement } from '../src/engine/transform.ts';
 
 export function renderDocument(document: CompositionDocument): string {
   return renderToStaticMarkup(createElement(CompositionRenderer, { document }));
