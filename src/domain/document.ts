@@ -7,7 +7,10 @@ export interface Box {
   height: number;
 }
 
-export interface TextElement {
+export type AffineMatrix = [number, number, number, number, number, number];
+export interface ElementPlacement { transform?: AffineMatrix; }
+
+export interface TextElement extends ElementPlacement {
   kind: 'text';
   id: string;
   box: Box;
@@ -28,7 +31,8 @@ export interface TextElement {
 
 export interface GlyphMark { char: string; x: number; y: number; rotate?: number; scaleX?: number; scaleY?: number; opacity?: number; }
 
-export interface ImageElement {
+export interface ImageElement extends ElementPlacement {
+  material?: { blend: 'normal' | 'multiply' | 'screen' };
   kind: 'image';
   id: string;
   box: Box;
@@ -79,7 +83,7 @@ export interface SpaceZone {
 export type PassKind = 'RAW' | 'THRESHOLD' | 'DITHER' | 'HALFTONE' | 'XEROX' | 'BITMAP' | 'OFFSET' | 'EROSION' | 'SCANNER_DISPLACEMENT' | 'GRAIN' | 'INK_BLEED' | 'CHANNEL_MISREGISTRATION';
 export interface ProcessingPass { id: string; kind: PassKind; amount: number; seed: number; enabled: boolean; }
 
-export type EvolutionEvent = 'ROOT' | 'GENERATE' | 'MUTATE' | 'PROOF' | 'DIRECT' | 'IMAGE_TYPE' | 'TYPOGRAPHY' | 'SPACE' | 'PROCESS' | 'RESTORE_SOURCE' | 'RESET' | 'CROSSBREED' | 'FAMILY' | 'DRIFT' | 'COLOUR' | 'ARCHIVE_BRANCH' | 'ARCHIVE_DUPLICATE';
+export type EvolutionEvent = 'ROOT' | 'GENERATE' | 'MUTATE' | 'PROOF' | 'DIRECT' | 'IMAGE_TYPE' | 'TYPOGRAPHY' | 'SPACE' | 'PROCESS' | 'RESTORE_SOURCE' | 'RESET' | 'CROSSBREED' | 'FAMILY' | 'DRIFT' | 'COLOUR' | 'ARCHIVE_BRANCH' | 'ARCHIVE_DUPLICATE' | 'CANVAS_EDIT' | 'MATERIAL';
 export interface LineageRecord {
   id: string;
   parentIds: string[];
@@ -91,7 +95,7 @@ export interface LineageRecord {
   crossbreed?: { baseId: string; donorId: string; donorWeight: number };
 }
 
-export interface TextureElement {
+export interface TextureElement extends ElementPlacement {
   kind: 'texture';
   id: string;
   box: Box;
@@ -100,7 +104,7 @@ export interface TextureElement {
   opacity: number;
 }
 
-export interface RuleElement {
+export interface RuleElement extends ElementPlacement {
   kind: 'rule';
   id: string;
   x1: number;
@@ -109,7 +113,7 @@ export interface RuleElement {
   y2: number;
 }
 
-export interface BlockElement {
+export interface BlockElement extends ElementPlacement {
   kind: 'block';
   id: string;
   box: Box;
@@ -135,6 +139,7 @@ export interface CompositionDocument {
   family?: string;
   /** Optional for existing saved compositions. Operations are serialisable recipes. */
   operations?: OperationRecord[];
+  canvasEdits?: CanvasEdit[];
   imageType?: ImageTypeRecipe;
   typography?: TypographyRecipe[];
   familyAsset?: { format: FamilyFormat; parentId?: string };
@@ -145,3 +150,5 @@ export interface CompositionDocument {
   spaceZones?: SpaceZone[];
   elements: CompositionElement[];
 }
+
+export interface CanvasEdit { elementId: string; action: 'TRANSFORM' | 'RESET' | 'IMAGE_FIT' | 'MATERIAL' | 'REMOVE_MATERIAL' | 'FRONT' | 'BACK'; matrix?: AffineMatrix; fit?: 'contain' | 'cover'; }

@@ -6,6 +6,7 @@ import { mutateComposition } from '../engine/mutate';
 import { applyOperation } from '../engine/operations';
 import { applyImageType, relationAllowed } from '../engine/imageType';
 import type { ColourRecipe, CompositionDocument, DriftRecipe, EvolutionEvent, ImageTypeRecipe, OperationRecord, ProcessingPass, SpaceZone, TypographyRecipe } from '../domain/document';
+import { addMaterial } from '../engine/transform';
 import { withColour } from '../engine/colour';
 import { applySpaceZones } from '../engine/space';
 import { originalImageDocument, withProcessedImage } from '../engine/processDocument';
@@ -39,6 +40,8 @@ export function useStudySession() {
   const [session, setSession] = useState<StudySession>(INITIAL_SESSION);
   const [document, setDocument] = useState(() => establishLineage(generateComposition({ system: 'ORDER', input: INITIAL_SESSION.input, seed: 1 }), crypto.randomUUID(), new Date().toISOString()));
   const [seedText, setSeedText] = useState('1');
+  const [materialLoading, setMaterialLoading] = useState(false);
+  const materialRequest = useRef(0);
   const [imageLoading, setImageLoading] = useState(false);
   const [error, setError] = useState('');
   const [generationCount, setGenerationCount] = useState(1);
@@ -56,6 +59,8 @@ export function useStudySession() {
   const autosaveRevision = useRef(0);
   const recoverySnapshot = useRef<RecoverySnapshot>({ session, document, seedText, undoStack, redoStack, directBase });
   recoverySnapshot.current = { session, document, seedText, undoStack, redoStack, directBase };
+  const liveSession = useRef({ document, session });
+  liveSession.current = { document, session };
   const ownedUrls = useRef(new Set<string>());
   const imageRequest = useRef(0);
   const referencedSources = new Set<string>();
@@ -146,16 +151,39 @@ export function useStudySession() {
     const urls = ownedUrls.current;
     return () => {
       imageRequest.current += 1;
+      materialRequest.current += 1;
       for (const url of urls) URL.revokeObjectURL(url);
       urls.clear();
     };
   }, []);
+
+  async function importMaterial(file: File) {
+    if (dirty || imageLoading || materialLoading || session.locks.TEXTURE || session.locks.GRID) return;
+    const request = ++materialRequest.current;
+    setMaterialLoading(true); setError('');
+    let temporaryUrl: string | undefined;
+    try {
+      const asset = await loadLocalImage(file);
+      temporaryUrl = asset.src;
+      if (request !== materialRequest.current || liveSession.current.document !== document || liveSession.current.session !== session) return;
+      const next = addMaterial(document, session.locks, asset);
+      ownedUrls.current.add(asset.src);
+      temporaryUrl = undefined;
+      commitDocument(next, 'MATERIAL');
+    } catch (cause) { setError(cause instanceof Error ? cause.message : 'The texture could not be imported.'); }
+    finally { if (temporaryUrl) URL.revokeObjectURL(temporaryUrl); if (request === materialRequest.current) setMaterialLoading(false); }
+  }
+  function editCanvas(next: CompositionDocument) {
+    if (dirty || imageLoading || materialLoading || next === document) return;
+    commitDocument(next, 'CANVAS_EDIT');
+  }
 
   function selectSystem(system: SystemId) {
     setSession((current) => ({ ...current, system }));
   }
 
   function commitDocument(next: CompositionDocument, event: EvolutionEvent, resetDirect = true, preserveLineage = false) {
+    materialRequest.current += 1; setMaterialLoading(false);
     const advanced = advanceHistory({ document, past: undoStack, future: redoStack }, next);
     setUndoStack(advanced.past);
     setRedoStack(advanced.future);
@@ -377,6 +405,7 @@ export function useStudySession() {
     const history = stepHistory({ document, past: undoStack, future: redoStack }, 'undo');
     const previous = history.document;
     setUndoStack(history.past); setRedoStack(history.future);
+    materialRequest.current += 1; setMaterialLoading(false);
     setDocument(previous);
     setSession((current) => ({ ...current, system: previous.system, input: previous.source }));
     setSeedText(String(previous.seed));
@@ -390,6 +419,7 @@ export function useStudySession() {
     const history = stepHistory({ document, past: undoStack, future: redoStack }, 'redo');
     const next = history.document;
     setUndoStack(history.past); setRedoStack(history.future);
+    materialRequest.current += 1; setMaterialLoading(false);
     setDocument(next);
     setSession((current) => ({ ...current, system: next.system, input: next.source }));
     setSeedText(String(next.seed));
@@ -475,7 +505,7 @@ export function useStudySession() {
   }
 
   return {
-    session, document, autosaveStatus, seedText, setSeedText, imageLoading, error,
+    session, document, materialLoading, importMaterial, editCanvas, autosaveStatus, seedText, setSeedText, imageLoading, error,
     canGenerate, canMutate, canProof, dirty, generationCount, selectSystem, updateInput, toggleLock,
     selectImage, useSampleImage, removeImage, generate, mutate,
     variations, storageReady, saving, saveCurrentVariation, restoreVariation, removeVariation, duplicateVariation, branchVariation, developLineage, developFamily, applyDrift, applyColour, crossbreed,

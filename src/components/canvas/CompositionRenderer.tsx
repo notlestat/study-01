@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import type { Ref } from 'react';
 import type { CompositionDocument, CompositionElement, TextElement } from '../../domain/document';
+import { visualBounds } from '../../engine/placement';
 import { resolveColour } from '../../engine/colour';
 import type { ResolvedColour } from '../../engine/colour';
 
@@ -41,9 +42,9 @@ function RenderElement({ element, clipPrefix, colour, imageFilter, accentFilter 
       const drawWidth = element.asset.width * scale;
       const drawHeight = element.asset.height * scale;
       return (
-        <g data-element={element.id} opacity={element.opacity ?? 1}>
+        <g data-element={element.id} opacity={element.opacity ?? 1} style={element.material ? { mixBlendMode: element.material.blend } : undefined}>
           <defs><clipPath id={clipId}><rect x={x} y={y} width={width} height={height} /></clipPath></defs>
-          <rect x={x} y={y} width={width} height={height} fill={colour.paper} />
+          {!element.material && <rect x={x} y={y} width={width} height={height} fill={colour.paper} />}
           <image href={element.asset.src} x={frame.x + (frame.width - drawWidth) * (element.fit === 'cover' ? element.focalX : .5)} y={frame.y + (frame.height - drawHeight) * (element.fit === 'cover' ? element.focalY : .5)} width={drawWidth} height={drawHeight} preserveAspectRatio="none" clipPath={`url(#${clipId})`} filter={imageFilter ? `url(#${imageFilter})` : undefined} />
           {accentFilter && colour.registration > 0 && <image href={element.asset.src} x={frame.x + (frame.width - drawWidth) * (element.fit === 'cover' ? element.focalX : .5) + colour.offset[0]} y={frame.y + (frame.height - drawHeight) * (element.fit === 'cover' ? element.focalY : .5) + colour.offset[1]} width={drawWidth} height={drawHeight} preserveAspectRatio="none" clipPath={`url(#${clipId})`} filter={`url(#${accentFilter})`} opacity={colour.registration * .85} />}
         </g>
@@ -85,7 +86,7 @@ export function CompositionRenderer({ document, showGrid = false, showZones = fa
   const selected = document.elements.find((element) => element.id === selectedElement);
   const relationId = `${id}-image-type`;
   return (
-    <svg ref={svgRef} className="generated-composition" viewBox={`0 0 ${document.width} ${document.height}`} role="img" aria-labelledby={`${id}-title ${id}-description`} data-seed={document.seed}>
+    <svg ref={svgRef} className="generated-composition" viewBox={`0 0 ${document.width} ${document.height}`} role="img" aria-labelledby={`${id}-title ${id}-description`} data-seed={document.seed} style={{ isolation: 'isolate' }}>
       <title id={`${id}-title`}>{document.source.title.trim() || 'Untitled study'}</title>
       <desc id={`${id}-description`}>{document.system} composition, seed {document.seed}. {document.hierarchy}. {document.source.metadata}</desc>
       {coloured && <defs>
@@ -101,13 +102,13 @@ export function CompositionRenderer({ document, showGrid = false, showZones = fa
           <feColorMatrix type="matrix" values={`0 0 0 0 ${channel(colour.accent, 1)} 0 0 0 0 ${channel(colour.accent, 3)} 0 0 0 0 ${channel(colour.accent, 5)} -.2126 -.7152 -.0722 1 0`} />
         </filter>}
       </defs>}
-      <metadata>{JSON.stringify({ application: "STUDY/01", documentVersion: document.version, engineRevision: document.engineRevision, system: document.system, seed: document.seed, dimensions: [document.width, document.height], title: document.source.title, metadata: document.source.metadata, family: document.family, familyAsset: document.familyAsset, operations: document.operations, imageType: document.imageType, typography: document.typography, processing: document.processing?.passes, colour: document.colour, drift: document.drift, lineage: document.lineage, spaceZones: document.spaceZones })}</metadata>
+      <metadata>{JSON.stringify({ application: "STUDY/01", documentVersion: document.version, engineRevision: document.engineRevision, system: document.system, seed: document.seed, dimensions: [document.width, document.height], title: document.source.title, metadata: document.source.metadata, family: document.family, familyAsset: document.familyAsset, operations: document.operations, canvasEdits: document.canvasEdits, placements: document.elements.filter(element => element.transform).map(element => ({ id: element.id, matrix: element.transform })), materials: document.elements.filter(element => element.kind === 'image' && element.material).map(element => ({ id: element.id, opacity: (element as import('../../domain/document').ImageElement).opacity, blend: (element as import('../../domain/document').ImageElement).material?.blend })), imageType: document.imageType, typography: document.typography, processing: document.processing?.passes, colour: document.colour, drift: document.drift, lineage: document.lineage, spaceZones: document.spaceZones })}</metadata>
       <rect data-paper-background="true" width={document.width} height={document.height} fill={colour.paper} />
       {special && title && (
         <defs>
           {document.imageType?.kind === 'TYPE_MASK'
-            ? <clipPath id={relationId}><TextShape element={title} fill="#fff" /></clipPath>
-            : <mask id={relationId} maskUnits="userSpaceOnUse" x="0" y="0" width={document.width} height={document.height}><rect width={document.width} height={document.height} fill="#fff" /><TextShape element={title} fill="#000" /></mask>}
+            ? <clipPath id={relationId}><g transform={title.transform ? `matrix(${title.transform.join(' ')})` : undefined}><TextShape element={title} fill="#fff" /></g></clipPath>
+            : <mask id={relationId} maskUnits="userSpaceOnUse" x="0" y="0" width={document.width} height={document.height}><rect width={document.width} height={document.height} fill="#fff" /><g transform={title.transform ? `matrix(${title.transform.join(' ')})` : undefined}><TextShape element={title} fill="#000" /></g></mask>}
         </defs>
       )}
       {document.elements.map((element) => {
@@ -115,14 +116,14 @@ export function CompositionRenderer({ document, showGrid = false, showZones = fa
         if (special && element.id === 'source-image' && element.kind === 'image' && title) {
           if (document.imageType?.kind === 'TYPE_MASK') {
             const maskedImage = { ...element, box: { ...title.box }, frame: undefined, fit: 'cover' as const };
-            return <g key={element.id} clipPath={`url(#${relationId})`}><RenderElement element={maskedImage} clipPrefix={id} colour={colour} imageFilter={imageFilter} accentFilter={accentFilter} /></g>;
+            return <g key={element.id} clipPath={`url(#${relationId})`}><g transform={element.transform ? `matrix(${element.transform.join(' ')})` : undefined} data-element="title"><RenderElement element={maskedImage} clipPrefix={id} colour={colour} imageFilter={imageFilter} accentFilter={accentFilter} /></g></g>;
           }
-          return <g key={element.id} mask={`url(#${relationId})`}><RenderElement element={element} clipPrefix={id} colour={colour} imageFilter={imageFilter} accentFilter={accentFilter} /></g>;
+          return <g key={element.id} mask={`url(#${relationId})`}><g transform={element.transform ? `matrix(${element.transform.join(' ')})` : undefined} data-element="title"><RenderElement element={element} clipPrefix={id} colour={colour} imageFilter={imageFilter} accentFilter={accentFilter} /></g></g>;
         }
-        return <RenderElement key={element.id} element={element} clipPrefix={id} colour={colour} imageFilter={imageFilter} accentFilter={accentFilter} />;
+        return <g key={element.id} data-element={element.id} transform={element.transform ? `matrix(${element.transform.join(' ')})` : undefined}><RenderElement key={element.id} element={element} clipPrefix={id} colour={colour} imageFilter={element.kind === 'image' && element.material ? undefined : imageFilter} accentFilter={element.kind === 'image' && element.material ? undefined : accentFilter} /></g>;
       })}
       {showSafe && <rect data-preview-only="true" aria-hidden="true" pointerEvents="none" x={margin} y={margin} width={document.width - 2 * margin} height={document.height - 2 * margin} fill="none" stroke="#77776f" strokeWidth="2" strokeDasharray="9 7" />}
-      {selected && 'box' in selected && <g data-preview-only="true" aria-hidden="true" pointerEvents="none"><rect {...selected.box} fill="none" stroke="#6a332b" strokeWidth="3" strokeDasharray="8 5" /><text x={selected.box.x} y={Math.max(16, selected.box.y - 9)} fontFamily="monospace" fontSize="13" fill="#6a332b">{selected.id}</text></g>}
+      {selected && 'box' in selected && <g data-preview-only="true" aria-hidden="true" pointerEvents="none"><rect {...visualBounds(selected)} fill="none" stroke="#6a332b" strokeWidth="3" strokeDasharray="8 5" /><text x={selected.box.x} y={Math.max(16, selected.box.y - 9)} fontFamily="monospace" fontSize="13" fill="#6a332b">{selected.id}</text></g>}
       {showGrid && (
         <g className="composition-guides" data-preview-only="true" aria-hidden="true" pointerEvents="none">
           {Array.from({ length: columns }, (_, index) => {
