@@ -1,9 +1,11 @@
 # Composition engine
 
-`generateComposition({ system, input, seed })` dispatches to ORDER, SILENCE, or TENSION. Each generator is a deterministic, browser-independent function returning a `CompositionDocument`. The same input and seed produce the same geometry, type, crop, and texture decisions.
+The engine generates and transforms composition documents without React or browser APIs. [The repository overview](../../README.md) describes setup and [the reference](../../docs/reference.md#architecture) describes its boundaries.
 
-All systems use a 900×1200 paper. ORDER alternates image/title hierarchy on a four- or six-column grid. SILENCE holds a smaller image and title apart in a wide open field. TENSION opposes a dense image column with a narrow, large title and a strong horizontal division. The rules calculate arrangements rather than selecting complete poster presets. `random.ts` owns seeded choices; `text.ts` estimates wrapping and fitting; `shared.ts` validates and frames the image.
+`generateComposition({ system, input, seed })` in [generate.ts](generate.ts) dispatches to ORDER, SILENCE, or TENSION. The same input and seed reproduce a result within the engine revision. `engineRevision` identifies generation code separately from the document storage version.
 
-`mutateComposition(current, locks)` generates candidates from successive seeds and merges the locked parts from the current document. GRID holds all geometry and the grid description; TYPE holds the title and metadata; IMAGE holds the image element; TEXTURE holds the texture element. A candidate is accepted only when its title and image boxes do not collide. With all locks enabled, the current document is returned unchanged.
+Base documents use a 900×1200 coordinate space. FAMILY documents use their format dimensions. [random.ts](random.ts) owns seeded choices, [text.ts](text.ts) estimates text wrapping, and [shared.ts](shared.ts) frames the image.
 
-The engine imports only domain types and its own helpers. Image decoding, storage, SVG drawing, and export belong outside it. This boundary allows tests to run in Node and allows a future renderer or worker to reuse the composition rules.
+`mutateComposition(current, locks)` in [mutate.ts](mutate.ts) searches candidate seeds and preserves the locked parts. GRID retains geometry, TYPE retains title and metadata, IMAGE retains the image element, and TEXTURE retains the texture element. Seed and edition annotations can change while TYPE is locked. If every part is locked, mutation returns the current document. If the bounded search finds no valid arrangement, it throws an error.
+
+Image decoding, browser storage, SVG rendering, and exports belong outside the engine. Pure pixel transformations live in `src/processing/`. Run `npm test` from the repository root to check the engine contracts.
