@@ -73,4 +73,4 @@ See [DEVELOPMENT.md](../DEVELOPMENT.md) for architecture, implementation evidenc
 
 ## AI-assisted development
 
-Corey sets the art direction and selects the work. Codex implements the engine and interface, creates repeatable review sheets, and checks behaviour against the brief. The frozen benchmark makes changes inspectable. Diversity counts are clues; type relationships, crop decisions, and material character need visual judgment. DEVELOPMENT.md explains the React/TypeScript boundaries used by the application.
+The operator sets the art direction and selects the work. Codex implements the engine and interface, creates repeatable review sheets, and checks behaviour against the brief. The frozen benchmark makes changes inspectable. Diversity counts are clues; type relationships, crop decisions, and material character need visual judgment. DEVELOPMENT.md explains the React/TypeScript boundaries used by the application.

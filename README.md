@@ -1,6 +1,6 @@
 # STUDY/01
 
-A browser composition instrument by Corey Kavanagh. Generate image-and-type studies with ORDER, SILENCE, and TENSION, then develop and export selected variations.
+A browser composition instrument. Generate image-and-type studies with ORDER, SILENCE, and TENSION, then develop and export selected variations.
 
 The interface uses Vite, React, and TypeScript. A separate TypeScript engine generates deterministic composition documents. The checked-in version is `0.2.0`; artwork quality remains under review.
 
@@ -46,4 +46,4 @@ Compare visual output with the [frozen baseline](public/benchmarks/baseline/inde
 | `src/components/` | Controls and composition renderer |
 | `src/styles/` | Layout and design tokens |
 
-Read the [reference](docs/reference.md) for workspaces, shortcuts, locks, storage behavior, and limits. [DEVELOPMENT.md](DEVELOPMENT.md) records implementation and visual decisions. Corey directs and selects the work; Codex assists with implementation and checks.
+Read the [reference](docs/reference.md) for workspaces, shortcuts, locks, storage behavior, and limits. [DEVELOPMENT.md](DEVELOPMENT.md) records implementation and visual decisions. The operator directs and selects the work; Codex assists with implementation and checks.
